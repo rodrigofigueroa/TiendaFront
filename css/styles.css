@@ -1,0 +1,66 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px; }
+
+body {
+  background: #f3f3f3; }
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.header {
+  width: 100%;
+  background: url("https://demot-vertigostudio.netdna-ssl.com/hestia/wp-content/uploads/sites/89/2017/01/Mountains_comp.jpg");
+  /* background-size: 100% */
+  background-attachment: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 190px; }
+  .header .container .menu {
+    width: 100%;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 25px 0px; }
+    .header .container .menu .logo a, .header .container .menu .menu-a a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      padding: 15px 25px;
+      font-size: 1.1em; }
+      .header .container .menu .logo a:hover, .header .container .menu .menu-a a:hover {
+        background: rgba(240, 243, 245, 0.2); }
+    .header .container .menu .menu-a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .header .container .menu .menu-a a:nth-child(1)::before {
+        content: "";
+        font-family: FontAwesome;
+        font-size: 16px;
+        vertical-align: top; }
+      .header .container .menu .menu-a a:nth-child(2)::before {
+        content: "";
+        font-family: FontAwesome;
+        font-size: 16px;
+        vertical-align: top; }

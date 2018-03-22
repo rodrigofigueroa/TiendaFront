@@ -1,0 +1,43 @@
+@mixin valorFont ($content, $fontFamily, $fontSize, $verticalAlign )
+	content: $content
+	font-family: $fontFamily
+	font-size: $fontSize
+	vertical-align: $verticalAlign
+.header
+	width: 100%
+	background: url('https://demot-vertigostudio.netdna-ssl.com/hestia/wp-content/uploads/sites/89/2017/01/Mountains_comp.jpg')
+	/* background-size: 100% */
+	background-attachment: cover
+	background-repeat: no-repeat
+	padding-bottom: 190px
+	.container
+		.menu
+			width: 100%
+			padding: 10px
+			@include flexRow
+			justify-content: space-between
+			margin: 25px 0px
+			.logo
+				a
+					display: block
+					text-decoration: none
+					color:#fff
+					padding: 15px 25px
+					font-size: 1.1em
+					&:hover
+						background: rgba(#f0f3f5, 0.2)
+			.menu-a
+				@include flexRow
+				@extend .logo
+				a:nth-child(1)::before
+					@include valorFont("\f0c2", FontAwesome,  16px, top )
+				a:nth-child(2)::before
+					@include valorFont("\f0c2", FontAwesome,  16px, top )
+				
+
+
+
+
+
+
+
