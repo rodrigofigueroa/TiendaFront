@@ -41,7 +41,7 @@ body {
       text-decoration: none;
       color: #fff;
       padding: 15px 25px;
-      font-size: 1.1em; }
+      font-size: 1.0em; }
       .header .container .menu .logo a:hover, .header .container .menu .menu-a a:hover {
         background: rgba(240, 243, 245, 0.2); }
     .header .container .menu .menu-a {
@@ -60,7 +60,60 @@ body {
         font-size: 16px;
         vertical-align: top; }
       .header .container .menu .menu-a a:nth-child(2)::before {
-        content: "";
+        content: "";
         font-family: FontAwesome;
         font-size: 16px;
         vertical-align: top; }
+      .header .container .menu .menu-a a:nth-child(3)::before {
+        content: "";
+        font-family: FontAwesome;
+        font-size: 16px;
+        vertical-align: top; }
+      .header .container .menu .menu-a a:nth-child(4)::before {
+        content: "";
+        font-family: FontAwesome;
+        font-size: 16px;
+        vertical-align: top; }
+      .header .container .menu .menu-a a:nth-child(5)::before {
+        content: "";
+        font-family: FontAwesome;
+        font-size: 16px;
+        vertical-align: top; }
+      .header .container .menu .menu-a a:nth-child(1)::after {
+        content: "";
+        font-family: FontAwesome;
+        font-size: 16px;
+        vertical-align: top;
+        margin-left: 2px; }
+      .header .container .menu .menu-a a:nth-child(2)::after {
+        content: "";
+        font-family: FontAwesome;
+        font-size: 16px;
+        vertical-align: top;
+        margin-left: 2px; }
+      .header .container .menu .menu-a a:nth-child(3)::after {
+        content: "";
+        font-family: FontAwesome;
+        font-size: 16px;
+        vertical-align: top;
+        margin-left: 2px; }
+    .header .container .menu .descarga a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      padding: 15px 25px;
+      font-size: 0.9em;
+      border-radius: 30px;
+      background: #E91E63;
+      -webkit-transition: 1s all ease;
+      -o-transition: 1s all ease;
+      transition: 1s all ease; }
+      .header .container .menu .descarga a:hover {
+        -webkit-box-shadow: -3px 6px 20px -3px #E91E63;
+        box-shadow: -3px 6px 20px -3px #E91E63; }
+    .header .container .menu .descarga a::before {
+      content: "";
+      font-family: FontAwesome;
+      font-size: 16px;
+      vertical-align: top;
+      margin-right: 5px; }

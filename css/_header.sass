@@ -23,7 +23,7 @@
 					text-decoration: none
 					color:#fff
 					padding: 15px 25px
-					font-size: 1.1em
+					font-size: 1.0em
 					&:hover
 						background: rgba(#f0f3f5, 0.2)
 			.menu-a
@@ -32,7 +32,44 @@
 				a:nth-child(1)::before
 					@include valorFont("\f0c2", FontAwesome,  16px, top )
 				a:nth-child(2)::before
-					@include valorFont("\f0c2", FontAwesome,  16px, top )
+					@include valorFont("\f039", FontAwesome,  16px, top )
+				a:nth-child(3)::before
+					@include valorFont("\f07a", FontAwesome,  16px, top )
+				a:nth-child(4)::before
+					@include valorFont("\f036", FontAwesome,  16px, top )
+				a:nth-child(5)::before
+					@include valorFont("\f0e0", FontAwesome,  16px, top )
+				a:nth-child(1)::after
+					@include valorFont("\f107", FontAwesome,  16px, top )
+					margin-left: 2px
+				a:nth-child(2)::after
+					@include valorFont("\f107", FontAwesome,  16px, top )
+					margin-left: 2px
+				a:nth-child(3)::after
+					@include valorFont("\f107", FontAwesome,  16px, top )
+					margin-left: 2px
+			.descarga
+				a
+					display: block
+					text-decoration: none
+					color:#fff
+					padding: 15px 25px
+					font-size: 0.9em
+					border-radius: 30px
+					background: #E91E63
+					transition: 1s all ease
+					&:hover
+						box-shadow: (-3px 6px 20px -3px #E91E63)
+				a::before
+					@include valorFont("\f107", FontAwesome,  16px, top )
+					margin-right: 5px
+
+
+
+
+					
+
+
 				
 
 
