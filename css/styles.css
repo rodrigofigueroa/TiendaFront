@@ -5,7 +5,8 @@
   font-size: 16px; }
 
 body {
-  background: #f3f3f3; }
+  background: #f3f3f3;
+  font-family: Arial, Helvetica; }
 
 .container {
   width: 90%;
@@ -32,19 +33,23 @@ body {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin: 25px 0px; }
-    .header .container .menu .logo a, .header .container .menu .menu-a a {
-      display: block;
-      text-decoration: none;
-      color: #fff;
-      padding: 15px 25px;
-      font-size: 1.0em; }
-      .header .container .menu .logo a:hover, .header .container .menu .menu-a a:hover {
-        background: rgba(240, 243, 245, 0.2); }
+    .header .container .menu .logo {
+      width: 20%;
+      padding: 10px; }
+      .header .container .menu .logo a {
+        display: normal;
+        text-decoration: none;
+        color: #fff;
+        padding: 15px 15px;
+        font-size: 1em; }
+        .header .container .menu .logo a:hover {
+          background: rgba(240, 243, 245, 0.2); }
     .header .container .menu .menu-a {
+      width: 80%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -53,67 +58,110 @@ body {
       -ms-flex-direction: row;
       flex-direction: row;
       -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      font-size: 12px;
+      display: flex;
+      flex-direction: row;
       flex-wrap: wrap; }
+      .header .container .menu .menu-a a {
+        display: normal;
+        text-decoration: none;
+        color: #fff;
+        padding: 15px 15px;
+        font-size: 1em; }
+        .header .container .menu .menu-a a:hover {
+          background: rgba(240, 243, 245, 0.2); }
       .header .container .menu .menu-a a:nth-child(1)::before {
         content: "";
         font-family: FontAwesome;
-        font-size: 16px;
-        vertical-align: top; }
+        font-size: 13px;
+        vertical-align: middle; }
       .header .container .menu .menu-a a:nth-child(2)::before {
         content: "";
         font-family: FontAwesome;
-        font-size: 16px;
-        vertical-align: top; }
+        font-size: 13px;
+        vertical-align: middle; }
       .header .container .menu .menu-a a:nth-child(3)::before {
         content: "";
         font-family: FontAwesome;
-        font-size: 16px;
-        vertical-align: top; }
+        font-size: 13px;
+        vertical-align: middle; }
       .header .container .menu .menu-a a:nth-child(4)::before {
         content: "";
         font-family: FontAwesome;
-        font-size: 16px;
-        vertical-align: top; }
+        font-size: 13px;
+        vertical-align: middle; }
       .header .container .menu .menu-a a:nth-child(5)::before {
         content: "";
         font-family: FontAwesome;
-        font-size: 16px;
-        vertical-align: top; }
+        font-size: 13px;
+        vertical-align: middle; }
       .header .container .menu .menu-a a:nth-child(1)::after {
         content: "";
         font-family: FontAwesome;
-        font-size: 16px;
-        vertical-align: top;
+        font-size: 13px;
+        vertical-align: middle;
         margin-left: 2px; }
       .header .container .menu .menu-a a:nth-child(2)::after {
         content: "";
         font-family: FontAwesome;
-        font-size: 16px;
-        vertical-align: top;
+        font-size: 13px;
+        vertical-align: middle;
         margin-left: 2px; }
       .header .container .menu .menu-a a:nth-child(3)::after {
         content: "";
         font-family: FontAwesome;
-        font-size: 16px;
-        vertical-align: top;
+        font-size: 13px;
+        vertical-align: middle;
         margin-left: 2px; }
-    .header .container .menu .descarga a {
-      display: block;
-      text-decoration: none;
+      .header .container .menu .menu-a a:last-child {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 15px 25px;
+        font-size: 0.9em;
+        border-radius: 30px;
+        background: #E91E63;
+        -webkit-transition: 1s all ease;
+        -o-transition: 1s all ease;
+        transition: 1s all ease; }
+        .header .container .menu .menu-a a:last-child:hover {
+          -webkit-box-shadow: -3px 6px 20px -3px #E91E63;
+          box-shadow: -3px 6px 20px -3px #E91E63; }
+      .header .container .menu .menu-a a:last-child::before {
+        content: "";
+        font-family: FontAwesome;
+        font-size: 16px;
+        vertical-align: middle;
+        margin-right: 5px; }
+  .header .container .contenedor-texto {
+    padding: 50px 0px; }
+    .header .container .contenedor-texto .slick {
+      text-align: center;
+      font-size: 4.1em;
+      color: #fff; }
+    .header .container .contenedor-texto .slick-text {
       color: #fff;
+      font-size: 1.1em;
+      text-align: center; }
+    .header .container .contenedor-texto input[type="submit"] {
+      margin-top: 20px;
+      margin: 0 auto;
+      display: block;
+      background: none;
       padding: 15px 25px;
-      font-size: 0.9em;
-      border-radius: 30px;
+      color: #fff;
+      border: 1px solid #E91E63;
       background: #E91E63;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
       -webkit-transition: 1s all ease;
       -o-transition: 1s all ease;
       transition: 1s all ease; }
-      .header .container .menu .descarga a:hover {
+      .header .container .contenedor-texto input[type="submit"]:hover {
         -webkit-box-shadow: -3px 6px 20px -3px #E91E63;
         box-shadow: -3px 6px 20px -3px #E91E63; }
-    .header .container .menu .descarga a::before {
-      content: "";
-      font-family: FontAwesome;
-      font-size: 16px;
-      vertical-align: top;
-      margin-right: 5px; }
