@@ -1,0 +1,44 @@
+@mixin spans($colorSpans)
+	color: $colorSpans
+.main
+	width: 100%
+	background: #f2f2f2
+	.container
+		transform: translate(0px, -150px)
+		.informacion
+			border-radius: 30px
+			background: #fff
+			.informacion-basica
+				width: 80%
+				margin: 0 auto
+				padding: 20px 0px
+				text-align: center
+				font-size: 18px
+				color: #999999
+				p
+					width: 100%
+					line-height: 18px
+			.informacion-dividida
+				padding: 20px 30px
+				@include flexRow
+				justify-content: space-around
+				.responsive
+					width: 30%
+					padding 0px 35px
+					text-align: center
+					span
+						font-size: 3.85em
+						@include spans(#DE4B39)
+					h4
+						color: #3C4858
+					p
+						color: #999999
+
+				.quality
+					@extend .responsive
+					span
+						@include spans(#55ACEF)
+				.support
+					@extend .responsive
+					span
+						@include spans(#EA4C89)

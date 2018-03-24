@@ -165,3 +165,51 @@ body {
       .header .container .contenedor-texto input[type="submit"]:hover {
         -webkit-box-shadow: -3px 6px 20px -3px #E91E63;
         box-shadow: -3px 6px 20px -3px #E91E63; }
+
+.main {
+  width: 100%;
+  background: #f2f2f2; }
+  .main .container {
+    -webkit-transform: translate(0px, -150px);
+    -ms-transform: translate(0px, -150px);
+    transform: translate(0px, -150px); }
+    .main .container .informacion {
+      border-radius: 30px;
+      background: #fff; }
+      .main .container .informacion .informacion-basica {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0px;
+        text-align: center;
+        font-size: 18px;
+        color: #999999; }
+        .main .container .informacion .informacion-basica p {
+          width: 100%;
+          line-height: 18px; }
+      .main .container .informacion .informacion-dividida {
+        padding: 20px 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        .main .container .informacion .informacion-dividida .responsive, .main .container .informacion .informacion-dividida .quality, .main .container .informacion .informacion-dividida .support {
+          width: 30%;
+          text-align: center; }
+          .main .container .informacion .informacion-dividida .responsive span, .main .container .informacion .informacion-dividida .quality span, .main .container .informacion .informacion-dividida .support span {
+            font-size: 3.85em;
+            color: #DE4B39; }
+          .main .container .informacion .informacion-dividida .responsive h4, .main .container .informacion .informacion-dividida .quality h4, .main .container .informacion .informacion-dividida .support h4 {
+            color: #3C4858; }
+          .main .container .informacion .informacion-dividida .responsive p, .main .container .informacion .informacion-dividida .quality p, .main .container .informacion .informacion-dividida .support p {
+            color: #999999; }
+        .main .container .informacion .informacion-dividida .quality span {
+          color: #55ACEF; }
+        .main .container .informacion .informacion-dividida .support span {
+          color: #EA4C89; }
