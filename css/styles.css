@@ -174,7 +174,7 @@ body {
     -ms-transform: translate(0px, -150px);
     transform: translate(0px, -150px); }
     .main .container .informacion {
-      border-radius: 30px;
+      border-radius: 30px 30px 0px 0px;
       background: #fff; }
       .main .container .informacion .informacion-basica {
         width: 80%;
@@ -213,3 +213,44 @@ body {
           color: #55ACEF; }
         .main .container .informacion .informacion-dividida .support span {
           color: #EA4C89; }
+    .main .container .who-are {
+      width: 100%;
+      background: url("../img/flor.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed; }
+      .main .container .who-are .who1 {
+        width: 80%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .main .container .who-are .who1 .who-texto {
+          width: 50%;
+          color: #fff; }
+          .main .container .who-are .who1 .who-texto h4 {
+            font-size: 2.4em; }
+          .main .container .who-are .who1 .who-texto p {
+            font-size: 1.1em;
+            font-weight: lighter;
+            line-height: 20px; }
+        .main .container .who-are .who1 .who-image {
+          width: 50%; }
+          .main .container .who-are .who1 .who-image img {
+            width: 100%;
+            height: 315px; }
+      .main .container .who-are .who2 {
+        width: 100%;
+        padding: 20px; }
+        .main .container .who-are .who2 .who-video {
+          width: 60%;
+          margin: 0 auto;
+          padding: 50px 0px; }
+          .main .container .who-are .who2 .who-video iframe {
+            width: 100%;
+            height: 312px; }
