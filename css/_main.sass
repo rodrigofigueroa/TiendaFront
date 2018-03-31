@@ -1,10 +1,17 @@
 @mixin spans($colorSpans)
 	color: $colorSpans
+@mixin productoas($textd, $colorAs, $ta, $marginAs, $display)
+	text-decoration: $textd
+	color: $colorAs
+	text-align: $ta
+	margin: $marginAs
+	display: $display
 .main
 	width: 100%
 	background: #f2f2f2
 	.container
 		transform: translate(0px, -150px)
+		box-shadow: 0px 0px 10px rgba(#000, .35)
 		.informacion
 			border-radius: 30px 30px 0px 0px
 			background: #fff
@@ -74,6 +81,53 @@
 					iframe
 						width: 100%
 						height: 312px
-
+		.products
+			background: #F0F0F0
+			padding: 20px 0px
+			text-align: center
+			h4
+				color: #3C4858
+				font-size: 35px
+				margin: 20px 0px
+			.showcase
+				color: #999999
+			.container-products
+				margin-top: 50px
+				padding: 10px 10px
+				@include flexRow
+				justify-content: space-around
+				.producto
+					width: 23%
+					background: #fff
+					border-radius: 5px
+					box-shadow: -1px 3px 4px rgba(#000, .35)
+					img
+						width: 90%
+						transform: translateY(-20px)
+						border-radius: 5px
+						transition: .5s all ease
+						box-shadow: -1px 4px 4px rgba(#000, .35)
+						&:hover
+							transform: translateY(-25px)
+							box-shadow: 0px 4px 10px rgba(#000, .55)
+					.trending
+						@include productoas(none, #E91E63, center, 10px auto, block)
+						font-size: 0.8em
+					.handbag
+						@include productoas(none, #3C4858, center, 10px auto, block)
+					p
+						color: #999999
+						text-align: center
+						width: 90%
+						margin: 0 auto
+						margin-bottom: 10px
+					.precio
+						width: 90%
+						margin: 0 auto
+						@include flexRow
+						justify-content: space-between
+						color: #999
+						span
+							margin: 10px 5px
 
 

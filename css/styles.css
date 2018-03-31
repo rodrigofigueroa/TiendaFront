@@ -1,12 +1,12 @@
 @charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 16px; }
+  box-sizing: border-box; }
 
 body {
   background: #f3f3f3;
-  font-family: Arial, Helvetica; }
+  font-family: Arial, Helvetica;
+  font-size: 16px; }
 
 .container {
   width: 90%;
@@ -172,7 +172,9 @@ body {
   .main .container {
     -webkit-transform: translate(0px, -150px);
     -ms-transform: translate(0px, -150px);
-    transform: translate(0px, -150px); }
+    transform: translate(0px, -150px);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35); }
     .main .container .informacion {
       border-radius: 30px 30px 0px 0px;
       background: #fff; }
@@ -254,3 +256,87 @@ body {
           .main .container .who-are .who2 .who-video iframe {
             width: 100%;
             height: 312px; }
+    .main .container .products {
+      background: #F0F0F0;
+      padding: 20px 0px;
+      text-align: center; }
+      .main .container .products h4 {
+        color: #3C4858;
+        font-size: 35px;
+        margin: 20px 0px; }
+      .main .container .products .showcase {
+        color: #999999; }
+      .main .container .products .container-products {
+        margin-top: 50px;
+        padding: 10px 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        .main .container .products .container-products .producto {
+          width: 23%;
+          background: #fff;
+          border-radius: 5px;
+          -webkit-box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.35);
+          box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.35); }
+          .main .container .products .container-products .producto img {
+            width: 90%;
+            -webkit-transform: translateY(-20px);
+            -ms-transform: translateY(-20px);
+            transform: translateY(-20px);
+            border-radius: 5px;
+            -webkit-transition: .5s all ease;
+            -o-transition: .5s all ease;
+            transition: .5s all ease;
+            -webkit-box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.35);
+            box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.35); }
+            .main .container .products .container-products .producto img:hover {
+              -webkit-transform: translateY(-25px);
+              -ms-transform: translateY(-25px);
+              transform: translateY(-25px);
+              -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.55);
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.55); }
+          .main .container .products .container-products .producto .trending {
+            text-decoration: none;
+            color: #E91E63;
+            text-align: center;
+            margin: 10px auto;
+            display: block;
+            font-size: 0.8em; }
+          .main .container .products .container-products .producto .handbag {
+            text-decoration: none;
+            color: #3C4858;
+            text-align: center;
+            margin: 10px auto;
+            display: block; }
+          .main .container .products .container-products .producto p {
+            color: #999999;
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 10px; }
+          .main .container .products .container-products .producto .precio {
+            width: 90%;
+            margin: 0 auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            color: #999; }
+            .main .container .products .container-products .producto .precio span {
+              margin: 10px 5px; }
