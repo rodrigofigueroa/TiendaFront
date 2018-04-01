@@ -263,7 +263,8 @@ body {
       .main .container .products h4 {
         color: #3C4858;
         font-size: 35px;
-        margin: 20px 0px; }
+        margin: 20px 0px;
+        text-align: center; }
       .main .container .products .showcase {
         color: #999999; }
       .main .container .products .container-products {
@@ -340,3 +341,84 @@ body {
             color: #999; }
             .main .container .products .container-products .producto .precio span {
               margin: 10px 5px; }
+    .main .container .meet {
+      background: #fff;
+      padding: 20px 0px; }
+      .main .container .meet h4 {
+        color: #3C4858;
+        font-size: 35px;
+        margin: 20px 0px;
+        text-align: center; }
+      .main .container .meet p {
+        color: #3C4858;
+        font-size: 1.1em;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto; }
+      .main .container .meet .container-meet {
+        margin-top: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .main .container .meet .container-meet .meet1 {
+          width: 45%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .main .container .meet .container-meet .meet1 .meet-img {
+            width: 50%;
+            padding: 10px; }
+            .main .container .meet .container-meet .meet1 .meet-img img {
+              width: 90%;
+              text-align: center;
+              border-radius: 5px;
+              -webkit-box-shadow: -3px 4px 6px rgba(0, 0, 0, 0.8);
+              box-shadow: -3px 4px 6px rgba(0, 0, 0, 0.8); }
+          .main .container .meet .container-meet .meet1 .meet-text {
+            width: 50%; }
+            .main .container .meet .container-meet .meet1 .meet-text h5 {
+              color: #3C4858;
+              font-size: 1.2em;
+              margin: 10px 0px;
+              text-align: left; }
+            .main .container .meet .container-meet .meet1 .meet-text span {
+              color: #999999;
+              font-size: 13px;
+              margin: 10px 0px;
+              text-align: left; }
+            .main .container .meet .container-meet .meet1 .meet-text p {
+              color: #999999;
+              font-size: 15px;
+              margin: 20px 0px;
+              text-align: justify; }
+            .main .container .meet .container-meet .meet1 .meet-text a {
+              display: inline-block;
+              text-decoration: none;
+              margin: 15px 0px;
+              padding: 10px; }
+            .main .container .meet .container-meet .meet1 .meet-text .fa-linkedin-in {
+              color: #0099e5; }
+            .main .container .meet .container-meet .meet1 .meet-text .fa-twitter {
+              color: #1da1f2; }
+            .main .container .meet .container-meet .meet1 .meet-text .fa-google-plus-g {
+              color: #dd4b39; }
+            .main .container .meet .container-meet .meet1 .meet-text .fa-facebook-f {
+              color: #3b5998; }

@@ -6,6 +6,11 @@
 	text-align: $ta
 	margin: $marginAs
 	display: $display
+@mixin titulos($colorDetitulo, $tamañoLetra, $margenLetra, $alinearTexto)
+	color: $colorDetitulo
+	font-size: $tamañoLetra
+	margin: $margenLetra
+	text-align: $alinearTexto
 .main
 	width: 100%
 	background: #f2f2f2
@@ -86,9 +91,7 @@
 			padding: 20px 0px
 			text-align: center
 			h4
-				color: #3C4858
-				font-size: 35px
-				margin: 20px 0px
+				@include titulos(#3C4858, 35px, 20px 0px, center)
 			.showcase
 				color: #999999
 			.container-products
@@ -129,5 +132,51 @@
 						color: #999
 						span
 							margin: 10px 5px
-
-
+		.meet
+			background: #fff
+			padding: 20px 0px
+			h4
+				@include titulos(#3C4858, 35px, 20px 0px, center)
+			p
+				color: #3C4858
+				font-size: 1.1em
+				text-align: center
+				width: 80%
+				margin: 0 auto
+			.container-meet
+				margin-top: 20px
+				@include flexRow
+				justify-content: center
+				.meet1
+					width: 45%
+					@include flexRow
+					align-items: center
+					.meet-img
+						width: 50%
+						padding: 10px
+						img
+							width: 90%
+							text-align: center
+							border-radius: 5px
+							box-shadow: -3px 4px 6px rgba(#000, 0.80)
+					.meet-text
+						width: 50%
+						h5
+							@include titulos(#3C4858, 1.2em, 10px 0px, left)
+						span
+							@include titulos(#999999, 13px, 10px 0px, left)
+						p
+							@include titulos(#999999, 15px, 20px 0px, justify)
+						a
+							display: inline-block
+							text-decoration: none
+							margin: 15px 0px
+							padding: 10px
+						.fa-linkedin-in
+							color: #0099e5
+						.fa-twitter
+							color: #1da1f2
+						.fa-google-plus-g
+							color: #dd4b39
+						.fa-facebook-f
+							color: #3b5998
