@@ -1,0 +1,90 @@
+doctype html
+html(lang='en')
+  include ./components/head.pug
+  body
+    .contenedor-aplicacion
+      include ./components/header
+      //- include ./components/noticias-bloque.pug
+      section.cont-contact
+        .container-fluid
+          .row
+            .mas-ofert.col-12.col-md-3
+              a.cont-contactanos.d-flex.justify-content-center.align-items-center
+                svg(xmlns='http://www.w3.org/2000/svg', width='44', height='10', viewBox='0 0 44 10')
+                    g(fill='none', fill-rule='evenodd', stroke='#F15A29', stroke-linecap='round', stroke-linejoin='round', stroke-width='2')
+                        path(d='M43 5.55H16M6.5 1l-5 3.795L6.5 9')
+                h4 Contáctanos
+              .ofertas.mt-3
+                h3 Más ofertas (1)
+                .oferta.mt-3
+                  span Mes 00, 2018
+                  span It Consultant
+                  p Outsystems Developers
+              .ofertas.mt-3
+                h3 Más ofertas (1)
+                .oferta.mt-3
+                  span Mes 00, 2018
+                  span It Consultant
+                  p Outsystems Developers
+            .cont-fr.col-12.col-md-9
+              .formulario-cont.col-10
+                .col-12.col-md-10.primer-texto
+                  h3 ¿Lorem ipsum 
+                    span dolor sit amet?
+                  p.mt-4 Show us what you've got! People with talent and a sense of responsibility are an essential part of the A Lifetime Experience concept. Please let us know your experience by filling out the form below.
+                form(action="" class="mt-5")
+                  .form-row
+                    .form-group.col-12.col-md-6.d-flex.flex-column.align-items-center
+                      .lb-txt
+                        span Nombre *
+                        label(for="nombre") Nombre*
+                        input(type="text" class="form-control" placeholder="" id="nombre")
+                      .lb-txt                      
+                        span E-mail *
+                        label(for="email") E-mail*
+                        input(type="text" class="form-control" placeholder="" id="email")
+                      .lb-txt                      
+                        span Celular *
+                        label(for="celular") Celular*
+                        input(type="text" class="form-control" placeholder="" id="celular")
+                    .form-group.col-12.col-md-6.d-flex.flex-column.align-items-md-start.align-items-center
+                      .lb-txt          
+                        span Nombre *
+                        label(for="linkedin") Link Linkedin
+                        input(type="text" class="form-control" placeholder="" id="linkedin")
+                      .lb-txt                
+                        span Linkedin *
+                        label(for="cvlink") CV Link
+                        input(type="text" class="form-control" placeholder="" id="cvlink")
+                      .lb-txt
+                        span CV *
+                        .input-file-convert
+                            i.fas.fa-plus
+                            i.fas.fa-check
+                            span Sube tu CV (pdf máx. 1 mb)*                            
+                            .input-file-convert-seleciona
+                              p.mt-5 Arrastra tus archivos aquí
+                              span SELECCIONAR
+                                svg(xmlns='http://www.w3.org/2000/svg', width='44', height='11', viewBox='0 0 44 11' class="ml-2")
+                                  g(fill='none', fill-rule='evenodd', stroke='#0874a6', stroke-linecap='round', stroke-linejoin='round', stroke-width='2')
+                                    path(d='M1 4.95h27M37.5 9.5l5-3.795-5-4.205')
+                              input(type="file", name="" id="archivos")
+                    .form-group.col-12.col-md-6.d-flex.flex-column.align-items-start.pl-5
+                       label.container-checkbox.mt-5
+                        | I accept the processing of my  personal data
+                        input(type='checkbox', checked='checked')
+                        span.checkmark
+                    //- .form-group.col-11.d-flex.justify-content-end.pl-3
+                    //-   .cont-inpu       
+                    //-     input(type="submit" value="APLICAR" disabled="disabled" class="inputDisabledKnows")
+                    //-     svg(xmlns='http://www.w3.org/2000/svg', width='44', height='11', viewBox='0 0 44 11')
+                    //-       g(fill='none', fill-rule='evenodd', stroke='#FFF', stroke-linecap='round', stroke-linejoin='round', stroke-width='2')
+                    //-         path(d='M1 5.58h27M37 9.662l5.243-3.833L37 1.58')
+                    .form-group.col-12.d-flex.justify-content-end
+                        .contacto-enviado.d-flex.flex-column.align-items-end                    
+                            h2 ¡Gracias, nos pondremos en contacto contigo brevemente!
+                            .btn-enviado
+                                h3 ENVIADO
+                                svg(xmlns='http://www.w3.org/2000/svg', width='28', height='20', viewBox='0 0 28 20')
+                                    path(fill='none', fill-rule='evenodd', stroke='#0874A6', stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M27 1L11 19 1 11')
+    include ./components/footer.pug

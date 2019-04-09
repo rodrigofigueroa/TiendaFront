@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  include ./components/head.pug
+  body
+    .contenedor-aplicacion
+      include ./components/header.pug
+      //- include ./components/noticias-bloque.pug      
+      section.reconocimientos
+        .container
+          .row
+            .col-12.col-md-6.pb-5.d-flex.flex-column.align-items-center
+              h3.text-left Reconocimientos
+              p.pb-4
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              .cuadro-reco.d-flex.flex-wrap.justify-content-center
+                figure
+                  img(src='../img/reconocimiento/1.png', alt='reconocimiento')
+                h4 Rising Star Company S&P Global Energy Awards
+                p.mt-3
+                  | En diciembre de 2017, Zuma Energía recibió este premio, que distingue a la compañía más prometedora del sector energético a nivel mundial. El jurado evaluó los resultados de la empresa en la Segunda Subasta Eléctrica de Largo Plazo, así como la rapidez del cierre financiero de sus tres proyectos, como la consolidación de un nuevo modelo de negocio capaz de sentar precedente internacional.
+              .cuadro-reco.d-flex.flex-wrap.justify-content-center
+                figure
+                  img(src='../img/reconocimiento/3.png', alt='reconocimiento')
+                h4
+                  | Deal of the year 2017, Latin America Project Finance Borrower of the Year Power Finance and Risk
+                p.mt-3
+                  | En mayo de 2018, Zuma Energía fue reconocido en la categoría de mejor proyecto 2017, por el cierre financiero del parque eólico Reynosa, ubicado en Tamaulipas, que será el más grande de México y uno de los más grandes de América Latina.
+            .col-12.col-md-6.d-flex.flex-column.justify-content-center.d-flex.flex-column.align-items-center
+              .cuadro-reco.d-flex.flex-wrap.justify-content-center
+                figure
+                  img(src='../img/reconocimiento/2.png', alt='reconocimiento')
+                h4 Best Renewable Energy Collaboration 2017 MIREC Awards
+                p.mt-3
+                  | En mayo de 2017 Zuma Energía fue galardonada con este premio gracias a su colaboración con Actis y Mesoamérica. Por medio de sus dos inversionistas, la empresa logró en muy poco tiempo posicionarse como una de las compañías líderes en la adquisición, financiamiento y desarrollo de proyectos de energía solar y eólica en México.
+              .cuadro-reco.d-flex.flex-wrap.justify-content-center
+                figure
+                  img(src='../img/reconocimiento/4.png', alt='reconocimiento')
+                h4 Americas ECA Finance Deal of the Year TFX: Deals of the Year Awards 2017
+                p.mt-3
+                  | En abril de 2018, se anunciaron los premios TFX que reconocen a las empresas que lograron los mejores acuerdos financieros para la consolidación de sus proyectos. Zuma Energía recibió esta distinción por conseguir un financiamiento, sin precedentes en México, para el parque eólico Reynosa. Este cierre financiero contó con el apoyo de ECA y DFI, e implicó el diseño de la primera estructura financiable bajo los nuevos acuerdos de compra de energía del mercado eléctrico mexicano.
+      include ./components/footer.pug

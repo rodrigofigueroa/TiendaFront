@@ -1,0 +1,15 @@
+doctype html
+html(lang='en')
+  include ./components/head.pug
+  body
+    .contenedor-aplicacion
+        section.lost.d-flex.flex-column.justify-content-between.align-items-center
+            .sentimos
+                h2 Lo sentimos,
+                h3 No está pasando nada aquí
+            .buttons-send.d-flex.flex-column.flex-md-row.justify-content-between.align-items-center
+                p Quizás te gustaría 
+                a(href="" class="d-flex justify-content-center align-items-center") REGRESAR A HOME
+                    svg(xmlns='http://www.w3.org/2000/svg', width='44', height='11', viewBox='0 0 44 11')
+                        g(fill='none', fill-rule='evenodd', stroke='#fff', stroke-linecap='round', stroke-linejoin='round', stroke-width='2')
+                            path(d='M1 4.95h27M37.5 9.5l5-3.795-5-4.205')

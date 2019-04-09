@@ -1,0 +1,227 @@
+doctype html
+html(lang='en')
+  include ./components/head.pug
+  body
+    
+    .contenedor-aplicacion
+      include ./components/header
+      //- include ./components/noticias-bloque.pug
+      section.p-equipo
+        .container-fluid
+          .row
+            .col-3.d-flex.flex-column.align-items-center.sidebar-gris
+              .fixed-sidebar-gris
+                a(id="#goto-zero" href='#zero')
+                  .cuadrito-personaje
+                    figure
+                      img(src='../img/personajes/2.2.jpg', alt='')
+                      .perso-equipo
+                        p.col-10
+                          | Adrian Katzew
+                          br
+                          span CEO
+                a(id="#goto-one" href='#one')
+                  .cuadrito-personaje
+                    figure
+                      img(src='../img/personajes/2.2.jpg', alt='')
+                      .perso-equipo
+                        p.col-10
+                          | José Luis García
+                          br
+                          span CDO
+                a(id="#goto-dos" href='#dos')
+                  .cuadrito-personaje
+                    figure
+                      img(src='../img/personajes/3.3.jpg', alt='')
+                      .perso-equipo
+                        p.col-10
+                          | Petros Lamprinos
+                          br
+                          span COO
+                a(id="#goto-tres" href='#tres')
+                  .cuadrito-personaje
+                    figure
+                      img(src='../img/personajes/4.4.jpg', alt='')
+                      .perso-equipo
+                        p.col-10
+                          | Hélène
+                          i Dimitracopoulos
+                          span CFO
+                a(id="#goto-cuatro" href='#cuatro')
+                  .cuadrito-personaje
+                    figure
+                      img(src='../img/personajes/5.5.jpg', alt='')
+                      .perso-equipo
+                        p.col-12
+                          | Diana Sasse
+                          br
+                          span CONSEJERA GENERAL
+                a(id="#goto-cinco" href='#cinco')
+                  .cuadrito-personaje
+                    figure
+                      img(src='../img/personajes/6.6.jpg', alt='')
+                      .perso-equipo
+                        p.col-10
+                          | Ramón Salcedo
+                          br
+                          span CDO
+                a(id="#goto-seis" href='#seis')
+                .cuadrito-personaje
+                  figure
+                    img(src='../img/personajes/7.7.jpg', alt='')
+                    .perso-equipo
+                      p.col-10
+                        | Gianluca Liuzzi
+                        br
+                        span CDO
+            .col-9.personaje-slid
+              .cont-slider-equipo.owl-carousel
+                .personaje.d-flex.flex-wrap.justify-content-center(data-hash='zero')
+                  .col-10
+                    h4
+                      | Adrian Katzew
+                    span CEO
+                  .col-5.cont-text-per.mt-5
+                    p
+                      | Adrián Katzew actualmente se desempeña como CEO de Zuma Energía, una empresa que cofundó en 2014 junto con las firmas de capital privado Actis y Mesoamérica. Zuma es el generador independiente líder de energía renovable en México, con más de 800 MW de proyectos eólicos y solares en operación y construcción.
+                    p
+                      | A lo largo de 15 años, la carrera de Adrián se ha centrado en el financiamiento, construcción, desarrollo y gestión de proyectos de energía renovable en varios países. Desde diversas posiciones de liderazgo ha mantenido un constante compromiso por contribuir con la transición energética hacia recursos energéticos renovables, competitivos y sustentables. También ha trabajado por la construcción de un futuro donde el desarrollo económico permita la generación de entornos sustentables, y en el que la industria de energías renovables se convierta en un motor relevante para la inversión, el crecimiento económico y la creación de empleo.
+                    p
+                      | Antes de fundar Zuma, Adrián fue vicepresidente de Vestas, líder mundial en tecnología eólica, de 2010 a 2014. Como líder de Vestas para México, Centroamérica y el Caribe, inició las actividades en la región en materia de gestión de actividades comerciales, así como de supervisión de construcción y operaciones. En Vestas, Adrián fue responsable de la ejecución de más de 1000 MW, incluidos los primeros proyectos eólicos en varios mercados, como en Guatemala, República Dominicana y en varios estados de México. Anteriormente, fue vicepresidente de desarrollo de mercados en First Solar, líder mundial de sistemas solares fotovoltaicos de película fina, en Europa, Medio Oriente y África, donde fue responsable de la expansión de las actividades de la empresa en múltiples países.
+                    p
+                      | Adrián inició su carrera en el sector energético en el Banco Santander, en Madrid, donde fue Director Ejecutivo, con responsabilidad global en el financiamiento y la adquisición de proyectos de electricidad y energías renovables. Su equipo fue responsable del financiamiento de más de 3,000 millones de dólares. En Santander, fue responsable de la apertura de varios mercados nuevos, como Francia, Alemania y Estados Unidos, y lideró la firma en la estructuración de tecnologías innovadoras y estructuras de financiamiento, como la energía solar concentrada.
+                    span
+                      | Share 
+                      .linea-azul-equipo
+                      i.fab.fa-linkedin-in
+                  .col-5
+                    figure
+                      img(src='../img/personajes/1.jpg', alt='Personaje')
+                .personaje.d-flex.flex-wrap.justify-content-center(data-hash='one')
+                  .col-10
+                    h4
+                      | Adrian Katzew
+                    span CEO
+                  .col-5.cont-text-per.mt-5
+                    p
+                      | Adrián Katzew actualmente se desempeña como CEO de Zuma Energía, una empresa que cofundó en 2014 junto con las firmas de capital privado Actis y Mesoamérica. Zuma es el generador independiente líder de energía renovable en México, con más de 800 MW de proyectos eólicos y solares en operación y construcción.
+                    p
+                      | A lo largo de 15 años, la carrera de Adrián se ha centrado en el financiamiento, construcción, desarrollo y gestión de proyectos de energía renovable en varios países. Desde diversas posiciones de liderazgo ha mantenido un constante compromiso por contribuir con la transición energética hacia recursos energéticos renovables, competitivos y sustentables. También ha trabajado por la construcción de un futuro donde el desarrollo económico permita la generación de entornos sustentables, y en el que la industria de energías renovables se convierta en un motor relevante para la inversión, el crecimiento económico y la creación de empleo.
+                    p
+                      | Antes de fundar Zuma, Adrián fue vicepresidente de Vestas, líder mundial en tecnología eólica, de 2010 a 2014. Como líder de Vestas para México, Centroamérica y el Caribe, inició las actividades en la región en materia de gestión de actividades comerciales, así como de supervisión de construcción y operaciones. En Vestas, Adrián fue responsable de la ejecución de más de 1000 MW, incluidos los primeros proyectos eólicos en varios mercados, como en Guatemala, República Dominicana y en varios estados de México. Anteriormente, fue vicepresidente de desarrollo de mercados en First Solar, líder mundial de sistemas solares fotovoltaicos de película fina, en Europa, Medio Oriente y África, donde fue responsable de la expansión de las actividades de la empresa en múltiples países.
+                    p
+                      | Adrián inició su carrera en el sector energético en el Banco Santander, en Madrid, donde fue Director Ejecutivo, con responsabilidad global en el financiamiento y la adquisición de proyectos de electricidad y energías renovables. Su equipo fue responsable del financiamiento de más de 3,000 millones de dólares. En Santander, fue responsable de la apertura de varios mercados nuevos, como Francia, Alemania y Estados Unidos, y lideró la firma en la estructuración de tecnologías innovadoras y estructuras de financiamiento, como la energía solar concentrada.
+                    span
+                      | Share 
+                      .linea-azul-equipo
+                      i.fab.fa-linkedin-in
+                  .col-5
+                    figure
+                      img(src='../img/personajes/1.jpg', alt='Personaje')
+                .personaje.d-flex.flex-wrap.justify-content-center(data-hash='dos')
+                  .col-10
+                    h4
+                      | Adrian Katzew
+                    span CEO
+                  .col-5.cont-text-per.mt-5
+                    p
+                      | Adrián Katzew actualmente se desempeña como CEO de Zuma Energía, una empresa que cofundó en 2014 junto con las firmas de capital privado Actis y Mesoamérica. Zuma es el generador independiente líder de energía renovable en México, con más de 800 MW de proyectos eólicos y solares en operación y construcción.
+                    p
+                      | A lo largo de 15 años, la carrera de Adrián se ha centrado en el financiamiento, construcción, desarrollo y gestión de proyectos de energía renovable en varios países. Desde diversas posiciones de liderazgo ha mantenido un constante compromiso por contribuir con la transición energética hacia recursos energéticos renovables, competitivos y sustentables. También ha trabajado por la construcción de un futuro donde el desarrollo económico permita la generación de entornos sustentables, y en el que la industria de energías renovables se convierta en un motor relevante para la inversión, el crecimiento económico y la creación de empleo.
+                    p
+                      | Antes de fundar Zuma, Adrián fue vicepresidente de Vestas, líder mundial en tecnología eólica, de 2010 a 2014. Como líder de Vestas para México, Centroamérica y el Caribe, inició las actividades en la región en materia de gestión de actividades comerciales, así como de supervisión de construcción y operaciones. En Vestas, Adrián fue responsable de la ejecución de más de 1000 MW, incluidos los primeros proyectos eólicos en varios mercados, como en Guatemala, República Dominicana y en varios estados de México. Anteriormente, fue vicepresidente de desarrollo de mercados en First Solar, líder mundial de sistemas solares fotovoltaicos de película fina, en Europa, Medio Oriente y África, donde fue responsable de la expansión de las actividades de la empresa en múltiples países.
+                    p
+                      | Adrián inició su carrera en el sector energético en el Banco Santander, en Madrid, donde fue Director Ejecutivo, con responsabilidad global en el financiamiento y la adquisición de proyectos de electricidad y energías renovables. Su equipo fue responsable del financiamiento de más de 3,000 millones de dólares. En Santander, fue responsable de la apertura de varios mercados nuevos, como Francia, Alemania y Estados Unidos, y lideró la firma en la estructuración de tecnologías innovadoras y estructuras de financiamiento, como la energía solar concentrada.
+                    span
+                      | Share 
+                      .linea-azul-equipo
+                      i.fab.fa-linkedin-in
+                  .col-5
+                    figure
+                      img(src='../img/personajes/1.jpg', alt='Personaje')
+                .personaje.d-flex.flex-wrap.justify-content-center(data-hash='tres')
+                  .col-10
+                    h4
+                      | Adrian Katzew
+                    span CEO
+                  .col-5.cont-text-per.mt-5
+                    p
+                      | Adrián Katzew actualmente se desempeña como CEO de Zuma Energía, una empresa que cofundó en 2014 junto con las firmas de capital privado Actis y Mesoamérica. Zuma es el generador independiente líder de energía renovable en México, con más de 800 MW de proyectos eólicos y solares en operación y construcción.
+                    p
+                      | A lo largo de 15 años, la carrera de Adrián se ha centrado en el financiamiento, construcción, desarrollo y gestión de proyectos de energía renovable en varios países. Desde diversas posiciones de liderazgo ha mantenido un constante compromiso por contribuir con la transición energética hacia recursos energéticos renovables, competitivos y sustentables. También ha trabajado por la construcción de un futuro donde el desarrollo económico permita la generación de entornos sustentables, y en el que la industria de energías renovables se convierta en un motor relevante para la inversión, el crecimiento económico y la creación de empleo.
+                    p
+                      | Antes de fundar Zuma, Adrián fue vicepresidente de Vestas, líder mundial en tecnología eólica, de 2010 a 2014. Como líder de Vestas para México, Centroamérica y el Caribe, inició las actividades en la región en materia de gestión de actividades comerciales, así como de supervisión de construcción y operaciones. En Vestas, Adrián fue responsable de la ejecución de más de 1000 MW, incluidos los primeros proyectos eólicos en varios mercados, como en Guatemala, República Dominicana y en varios estados de México. Anteriormente, fue vicepresidente de desarrollo de mercados en First Solar, líder mundial de sistemas solares fotovoltaicos de película fina, en Europa, Medio Oriente y África, donde fue responsable de la expansión de las actividades de la empresa en múltiples países.
+                    p
+                      | Adrián inició su carrera en el sector energético en el Banco Santander, en Madrid, donde fue Director Ejecutivo, con responsabilidad global en el financiamiento y la adquisición de proyectos de electricidad y energías renovables. Su equipo fue responsable del financiamiento de más de 3,000 millones de dólares. En Santander, fue responsable de la apertura de varios mercados nuevos, como Francia, Alemania y Estados Unidos, y lideró la firma en la estructuración de tecnologías innovadoras y estructuras de financiamiento, como la energía solar concentrada.
+                    span
+                      | Share 
+                      .linea-azul-equipo
+                      i.fab.fa-linkedin-in
+                  .col-5
+                    figure
+                      img(src='../img/personajes/1.jpg', alt='Personaje')
+                .personaje.d-flex.flex-wrap.justify-content-center(data-hash='cuatro')
+                  .col-10
+                    h4
+                      | Adrian Katzew
+                    span CEO
+                  .col-5.cont-text-per.mt-5
+                    p
+                      | Adrián Katzew actualmente se desempeña como CEO de Zuma Energía, una empresa que cofundó en 2014 junto con las firmas de capital privado Actis y Mesoamérica. Zuma es el generador independiente líder de energía renovable en México, con más de 800 MW de proyectos eólicos y solares en operación y construcción.
+                    p
+                      | A lo largo de 15 años, la carrera de Adrián se ha centrado en el financiamiento, construcción, desarrollo y gestión de proyectos de energía renovable en varios países. Desde diversas posiciones de liderazgo ha mantenido un constante compromiso por contribuir con la transición energética hacia recursos energéticos renovables, competitivos y sustentables. También ha trabajado por la construcción de un futuro donde el desarrollo económico permita la generación de entornos sustentables, y en el que la industria de energías renovables se convierta en un motor relevante para la inversión, el crecimiento económico y la creación de empleo.
+                    p
+                      | Antes de fundar Zuma, Adrián fue vicepresidente de Vestas, líder mundial en tecnología eólica, de 2010 a 2014. Como líder de Vestas para México, Centroamérica y el Caribe, inició las actividades en la región en materia de gestión de actividades comerciales, así como de supervisión de construcción y operaciones. En Vestas, Adrián fue responsable de la ejecución de más de 1000 MW, incluidos los primeros proyectos eólicos en varios mercados, como en Guatemala, República Dominicana y en varios estados de México. Anteriormente, fue vicepresidente de desarrollo de mercados en First Solar, líder mundial de sistemas solares fotovoltaicos de película fina, en Europa, Medio Oriente y África, donde fue responsable de la expansión de las actividades de la empresa en múltiples países.
+                    p
+                      | Adrián inició su carrera en el sector energético en el Banco Santander, en Madrid, donde fue Director Ejecutivo, con responsabilidad global en el financiamiento y la adquisición de proyectos de electricidad y energías renovables. Su equipo fue responsable del financiamiento de más de 3,000 millones de dólares. En Santander, fue responsable de la apertura de varios mercados nuevos, como Francia, Alemania y Estados Unidos, y lideró la firma en la estructuración de tecnologías innovadoras y estructuras de financiamiento, como la energía solar concentrada.
+                    span
+                      | Share 
+                      .linea-azul-equipo
+                      i.fab.fa-linkedin-in
+                  .col-5
+                    figure
+                      img(src='../img/personajes/1.jpg', alt='Personaje')
+                .personaje.d-flex.flex-wrap.justify-content-center(data-hash='cinco')
+                  .col-10
+                    h4
+                      | Adrian Katzew
+                    span CEO
+                  .col-5.cont-text-per.mt-5
+                    p
+                      | Adrián Katzew actualmente se desempeña como CEO de Zuma Energía, una empresa que cofundó en 2014 junto con las firmas de capital privado Actis y Mesoamérica. Zuma es el generador independiente líder de energía renovable en México, con más de 800 MW de proyectos eólicos y solares en operación y construcción.
+                    p
+                      | A lo largo de 15 años, la carrera de Adrián se ha centrado en el financiamiento, construcción, desarrollo y gestión de proyectos de energía renovable en varios países. Desde diversas posiciones de liderazgo ha mantenido un constante compromiso por contribuir con la transición energética hacia recursos energéticos renovables, competitivos y sustentables. También ha trabajado por la construcción de un futuro donde el desarrollo económico permita la generación de entornos sustentables, y en el que la industria de energías renovables se convierta en un motor relevante para la inversión, el crecimiento económico y la creación de empleo.
+                    p
+                      | Antes de fundar Zuma, Adrián fue vicepresidente de Vestas, líder mundial en tecnología eólica, de 2010 a 2014. Como líder de Vestas para México, Centroamérica y el Caribe, inició las actividades en la región en materia de gestión de actividades comerciales, así como de supervisión de construcción y operaciones. En Vestas, Adrián fue responsable de la ejecución de más de 1000 MW, incluidos los primeros proyectos eólicos en varios mercados, como en Guatemala, República Dominicana y en varios estados de México. Anteriormente, fue vicepresidente de desarrollo de mercados en First Solar, líder mundial de sistemas solares fotovoltaicos de película fina, en Europa, Medio Oriente y África, donde fue responsable de la expansión de las actividades de la empresa en múltiples países.
+                    p
+                      | Adrián inició su carrera en el sector energético en el Banco Santander, en Madrid, donde fue Director Ejecutivo, con responsabilidad global en el financiamiento y la adquisición de proyectos de electricidad y energías renovables. Su equipo fue responsable del financiamiento de más de 3,000 millones de dólares. En Santander, fue responsable de la apertura de varios mercados nuevos, como Francia, Alemania y Estados Unidos, y lideró la firma en la estructuración de tecnologías innovadoras y estructuras de financiamiento, como la energía solar concentrada.
+                    span
+                      | Share 
+                      .linea-azul-equipo
+                      i.fab.fa-linkedin-in
+                  .col-5
+                    figure
+                      img(src='../img/personajes/1.jpg', alt='Personaje')
+                .personaje.d-flex.flex-wrap.justify-content-center(data-hash='seis')
+                  .col-10
+                    h4
+                      | Adrian Katzew
+                    span CEO
+                  .col-5.cont-text-per.mt-5
+                    p
+                      | Adrián Katzew actualmente se desempeña como CEO de Zuma Energía, una empresa que cofundó en 2014 junto con las firmas de capital privado Actis y Mesoamérica. Zuma es el generador independiente líder de energía renovable en México, con más de 800 MW de proyectos eólicos y solares en operación y construcción.
+                    p
+                      | A lo largo de 15 años, la carrera de Adrián se ha centrado en el financiamiento, construcción, desarrollo y gestión de proyectos de energía renovable en varios países. Desde diversas posiciones de liderazgo ha mantenido un constante compromiso por contribuir con la transición energética hacia recursos energéticos renovables, competitivos y sustentables. También ha trabajado por la construcción de un futuro donde el desarrollo económico permita la generación de entornos sustentables, y en el que la industria de energías renovables se convierta en un motor relevante para la inversión, el crecimiento económico y la creación de empleo.
+                    p
+                      | Antes de fundar Zuma, Adrián fue vicepresidente de Vestas, líder mundial en tecnología eólica, de 2010 a 2014. Como líder de Vestas para México, Centroamérica y el Caribe, inició las actividades en la región en materia de gestión de actividades comerciales, así como de supervisión de construcción y operaciones. En Vestas, Adrián fue responsable de la ejecución de más de 1000 MW, incluidos los primeros proyectos eólicos en varios mercados, como en Guatemala, República Dominicana y en varios estados de México. Anteriormente, fue vicepresidente de desarrollo de mercados en First Solar, líder mundial de sistemas solares fotovoltaicos de película fina, en Europa, Medio Oriente y África, donde fue responsable de la expansión de las actividades de la empresa en múltiples países.
+                    p
+                      | Adrián inició su carrera en el sector energético en el Banco Santander, en Madrid, donde fue Director Ejecutivo, con responsabilidad global en el financiamiento y la adquisición de proyectos de electricidad y energías renovables. Su equipo fue responsable del financiamiento de más de 3,000 millones de dólares. En Santander, fue responsable de la apertura de varios mercados nuevos, como Francia, Alemania y Estados Unidos, y lideró la firma en la estructuración de tecnologías innovadoras y estructuras de financiamiento, como la energía solar concentrada.
+                    span
+                      | Share 
+                      .linea-azul-equipo
+                      i.fab.fa-linkedin-in
+                  .col-5
+                    figure
+                      img(src='../img/personajes/1.jpg', alt='Personaje')
+    
+    include ./components/footer.pug

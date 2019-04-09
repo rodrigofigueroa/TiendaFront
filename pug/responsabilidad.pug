@@ -1,0 +1,81 @@
+doctype html
+html(lang='en')
+  include ./components/head.pug
+  body
+    .contenedor-aplicacion
+      include ./components/header.pug
+      //- include ./components/noticias-bloque.pug
+      section.resp-img
+        figure
+          img(src='../img/responsabilidad/1.jpg', alt='responsabilidad')
+      section.resp-txt
+        .container.pt-5.pb-5
+          .row.d-flex.justify-content-center
+            .col-10
+              p
+                | Estamos comprometidos con 
+                span alcanzar nuestros objetivos
+                |  de manera 
+                span responsable y sostenible.
+            .col-12.mt-5
+              p.col-10
+                | Para ésto, enfocamos nuestros esfuerzos en mitigar riesgos de operación y en construir relaciones de respeto y confianza con las comunidades en las que operamos.
+      section.cards-desarrollo-sustentable
+        .card-d-s
+          h3 Desarrollo Sustentable
+          p
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur iusto, dicta similique necessitatibus reprehenderit dolorem
+        .card-d-s
+          h3 Operación responsable
+          p
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur iusto, dicta similique necessitatibus reprehenderit dolorem
+        .card-d-s
+          h3 Iversión Social
+          p
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur iusto, dicta similique necessitatibus reprehenderit dolorem
+        .card-d-s
+          h3 Desarro de Talento
+          p
+            | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur iusto, dicta similique necessitatibus reprehenderit dolorem
+      section.becas
+        .container-fluid
+          .row.d-flex.justify-content-center.flex-wap
+            .col-10
+              h3 Becas
+              p
+                | Zuma otorga becas para estudiantes de recursos socioeconómicos bajos
+                | y estudiantes destacados en las regiones que albergan nuestros proyectos. Proporcionamos becas para estudios de secundaria en el área de influencia de cada proyecto, así como becas universitarias de colegiatura y manutención para que estudiantes de escuelas públicas secundarias pueden cursar la licenciatura en universidades privadas reconocidas.
+            .col-12.col-md-10.mt-5.mb-5
+              figure.mb-4
+                img(src='../img/responsabilidad/2.png', alt='empresa')
+              p.col-12.col-md-8
+                | Zuma formó una alianza con INROADS en 2015 para identificar y capacitar a jóvenes talentosos de universidades públicas con recursos socioeconómicos bajos para promover su formación integral e incorporarlos al sector.  En el último año, hemos recibido a 6 Inroaders que se han sumado a las áreas de finanzas, legal y técnicas de Zuma.
+              p.col-12.col-md-8
+                | Para saber más sobre INROADS de México visita el portal 
+                a(href='www.inroads.org.mx') inroads.org.mx
+            .col-12
+              .reporte
+                p
+                  | Consulta el reporte semestral de cumplimiento ambiental,
+                  | social y de salud y seguridad laboral de Parque Eólico Reynosa.
+                .reporte-txt
+                  span Mes - 0000
+                  a(href='')
+                    span
+                      | DESCARGAR
+                      svg(xmlns='http://www.w3.org/2000/svg', width='9', height='13', viewBox='0 0 11 15')
+                        g(fill='none', fill-rule='evenodd', stroke='#FE6E4F', stroke-linecap='round', stroke-linejoin='round', stroke-width='2')
+                          path(d='M5 8V1.693M1 8l3.833 5.243L9.081 8')
+      section.deseas
+        .container-fluid
+          .row
+            .col-12.col-md-6.d-flex.justify-content-center.align-items-center
+              .des-txt.d-flex.justify-content-center.align-items-center
+                h5 ¿Deseas contactarnos?
+                a(href='')
+                  svg.ml-3.f-recta(xmlns='http://www.w3.org/2000/svg', width='50', height='11', viewBox='0 0 60 11')
+                    g(fill='none', fill-rule='evenodd', stroke='#fe6e4f', stroke-linecap='round', stroke-linejoin='round', stroke-width='2')
+                      path(d='M1 5h10M17 4.95h27M53.5 9.5l5-3.795-5-4.205')
+            .col-12.col-md-6.d-flex.align-items-center.justify-content-center
+              h5 Únete a nuestro equipo
+      include ./components/footer.pug

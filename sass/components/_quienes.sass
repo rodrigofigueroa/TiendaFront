@@ -1,0 +1,92 @@
+.botones-slider-quienes-somos-top
+    top: 0
+.botones-slider-quienes-somos-bottom
+    bottom: 0
+.botones-slider-quienes-somos
+    position: absolute //cambiar a fixed con animación 
+    height: auto
+    right: 0
+    padding: 20px
+    z-index: 3
+    cursor: pointer
+    &:before
+        content: ''
+        position: absolute
+        bottom: -8px
+        left: 15%            
+        width: 190.2px
+        height: 15px
+        background-image: linear-gradient(to bottom, #006dc4, #00b9ee)
+        transform: skew(40deg)
+        z-index: 2
+    a
+        text-decoration: none
+        position: relative
+        color: $negro
+        max-width: 207px
+        height: 90px
+        background: $gris-regular
+        padding: 23px 50px
+        span 
+            position: relative                            
+            transition: 1s all ease
+            color: $otro-gris-claro-dos               
+            &:before
+                content: ''
+                width: 0%
+                height: 2px
+                background: transparent
+                position: absolute
+                bottom: -30%
+                right: 0
+                transition: 0.6s all ease
+            &:after
+                content: ''
+                width: 0%
+                height: 2px
+                background: transparent
+                position: absolute
+                bottom: -30%
+                right: 35%
+                transition: 0.6s all ease  
+        .dot-activo-azul
+            color: $azul
+            font-weight: 900
+            &:before
+                content: ''
+                width: 30%
+                height: 2px
+                background: $azul-claro
+                position: absolute
+                bottom: -30%
+                right: 0
+                transition: 0.6s all ease
+            &:after
+                content: ''
+                width: 10%
+                height: 2px
+                background: $azul-claro
+                position: absolute
+                bottom: -30%
+                right: 35%
+                transition: 0.6s all ease  
+        &:hover
+            span:before
+                background: $azul-claro
+                width: 30%
+            span:after
+                width: 10%
+                background: $azul-claro
+            span
+                color: $azul
+                font-weight: 900
+.slider-quienes-somos
+    width: 100%
+    position: relative
+    .cont-slider-quienes
+        width: 100%
+        figure
+            width: 100%
+            margin: 0px
+            img
+                width: 100%

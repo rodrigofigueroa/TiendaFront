@@ -1,0 +1,60 @@
+footer
+    padding: 38px 0
+    background: $blanco
+    a
+        text-decoration: none
+        color: $gris-fuerte
+        font-family: 'work-light'
+        font-size: 1em
+        &:hover
+            text-decoration: none
+            color: $gris-fuerte
+    .f-menu                    
+        text-align: center
+        a            
+            margin-right: 30px
+            display: inline-block
+            color: $gris-regular-dos
+            font-family: 'work-bold'
+            position: relative
+            transition: 0.5s all ease
+            &:hover
+                color: $azul
+                font-weight: 900
+            &:hover:after
+                background: $azul-claro
+                width: 10%
+            &:hover:before
+                background: $azul-claro
+                width: 30%
+            &:before
+                content: ''
+                width: 0%
+                height: 2px
+                background: transparent
+                position: absolute
+                bottom: 1%
+                right: 0
+                transition: 0.6s all ease
+            &:after
+                content: ''
+                width: 0%
+                height: 2px
+                background: transparent
+                position: absolute
+                bottom: 1%
+                right: 35%
+                transition: 0.6s all ease
+        p
+            margin-left: 10px
+            margin-right: 30px
+            display: inline-block
+            font-family: 'work-light'
+            color: $gris-regular-dos
+            margin-bottom: 0
+        a
+            display: inline-block
+            color: $gris-regular-dos
+    .f-terminos
+        margin-top: 30px
+        text-align: center

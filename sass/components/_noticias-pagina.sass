@@ -1,0 +1,179 @@
+.noticia-important
+    background: $blanco!important
+.noticias-pagina
+    padding: 180px 0px 20px 0px
+    background: $gris-claro
+    .container-fluid
+        .row
+            .txt-news-prin
+                p
+                    font-family: 'work-regular'
+                    font-size: 1.5625rem      
+                    line-height: 1.68
+            div:nth-child(2)
+                position: relative
+                .articulos
+                    a
+                        text-decoration: none
+                        color: $negro
+                        font-size: 0.75rem
+                        display: block
+                        margin-bottom: 10px                    
+                    .cate-activo-naranja
+                        font-family: 'work-bold'
+                        font-size: 0.75rem               
+                        color: $naranja 
+            .news-c
+                position: relative
+                .cdr-news
+                    margin: 32px 0px
+                    width: 100%
+                    transition: 0.8s all ease
+                    &:hover
+                        box-shadow: 5px 8px 10px 0 rgba(0, 0, 0, 0.15)
+                        transform: translate(0%,-2%)
+                        .txt-prin
+                            .leer-news
+                                visibility: visible
+                                opacity: 1
+                    figure
+                        margin: 0
+                        text-align: center
+                        img
+                            width: 180px
+                            height: 206px
+                    .cont-art
+                        position: relative
+                        width: 100%
+                        padding: 29px 32px
+                        background: $blanco
+                        height: 206px
+                        span
+                            font-size: 0.75rem
+                            color: $categoria
+                        .categoria
+                            position: absolute
+                            right: 5%
+                            top: 10%
+                            color: $negro
+                    .txt-prin
+                        margin-top: 10px
+                        border-top: 1px solid #000
+                        padding: 5 0px 
+                        p
+                            font-family: 'work-medium'
+                            font-size: 1.375rem
+                            margin: 0
+                        span
+                            font-family: 'work-bold'
+                            font-size: 0.875rem
+                            color: $categoria
+                        .leer-news
+                            text-decoration: none
+                            position: absolute
+                            bottom: 5%
+                            right: 5%                            
+                            transition: 1s all ease                            
+                            visibility: visible
+                            opacity: 1
+                            span
+                                font-size: 0.625rem
+                                font-family: 'work-bold'
+                                color: $negro
+                .detalle-nota //animacion
+                    display: block
+                    background: $blanco                    
+                    z-index: 1
+                    height: 100%
+                    a
+                        svg
+                            transform: rotate(180deg)
+                    .principal
+                        width: 100%
+                        h2
+                            font-size: 3.125rem
+                            font-family: 'work-light'
+                            span
+                                color: $azul 
+                                font-family: 'work-bold'
+                        p
+                            font-size: 1.25rem
+                            color: $categoria
+                            position: relative
+                            span
+                                font-family: 'work-bold'
+                            svg
+                                position: absolute
+                                left: 0
+                                bottom: -15px
+                    .info-nota
+                        font-size: 1.25rem
+                        margin-top: 100px
+                    .redes
+                        p
+                            font-size: 0.75rem
+                        .linea-azul-equipo
+                            width: 50px
+                            height: 2px
+                            margin: 10px 10px
+                            display: inline-block
+                            position: relative
+                            &:before
+                                content: ''
+                                width: 50%
+                                height: 2px
+                                background: $azul
+                                position: absolute
+                                bottom: 30%
+                                right: 0
+                                transition: 0.6s all ease
+                            &:after
+                                content: ''
+                                width: 30%
+                                height: 2px
+                                background: $azul
+                                position: absolute
+                                bottom: 30%
+                                right: 60%
+                                transition: 0.6s all ease 
+                        a
+                            display: block
+                            margin: 0px 10px
+                            color: $categoria
+                            text-decoration: none
+                            &:hover
+                                color: $categoria
+                        p
+                            display: block
+                    .botones-nota
+                        margin-top: 200px
+                        .row
+                            div:nth-child(1)
+                                text-align: left
+                            div:nth-child(2)
+                                text-align: right
+                            div
+                                padding: 42px 25px
+                                background: $gris-regular
+                                transition: 1s all ease
+                                cursor: pointer
+                                a
+                                    margin-right: 20px
+                                    svg
+                                        transform: rotate(180deg)
+                                p
+                                    font-family: 'work-light'
+                                    font-size: 1em
+                                &:hover
+                                    background: $azul
+                                    p
+                                        color: $blanco
+                                        font-family: 'work-regular'
+            @media screen and (max-width: 767px)
+                .cdr-news
+                    figure
+                        img
+                            width: 100%!important
+                            height: 100%!important
+                    .cont-art
+                        height: auto!important

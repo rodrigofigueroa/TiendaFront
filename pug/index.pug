@@ -1,0 +1,79 @@
+doctype html
+html(lang='en')
+  include ./components/head.pug
+  body
+    .contenedor-aplicacion
+      include ./components/logo-triangle.pug
+      include ./components/header
+      section.slider-molino.capa-blanca
+        .contenedor-sliderm          
+        .contenedor-logo-texto          
+          h1.mt-3 lorem ipsum lorem ipsum
+        .mouse
+          .scroll
+      section.sec-cards.container-fluid
+        .row.d-flex.flex-column.align-items-center
+          article.c-txt.col-12.d-flex.justify-content-center
+            p.col-12.col-md-9
+              span lorem ipsum 
+              | de energía renovable con un modelo integral de negocio que cubre toda la cadena de valor. lorem ipsum
+          article.col-10.cont-cards.d-flex.flex-column.flex-md-row.justify-content-around.align-items-center
+            .cdr.col-6.col-md-3.d-flex.justify-content-center.align-items-center
+              .cont-hover-cards
+                .con-cdr
+                  h2 Líderes
+                  p
+                    | Somos el productor independiente
+                    | líder de energías renovables en México
+            .cdr.col-6.col-md-3.d-flex.justify-content-center.align-items-center
+              .cont-hover-cards
+                .con-cdr
+                  h2 Vanguardia
+                  p Contribuimos a la transformación energética de México
+            .cdr.col-6.col-md-3.d-flex.justify-content-center.align-items-center
+              .cont-hover-cards
+                .con-cdr
+                  h2 Responsabilidad
+                  p
+                    | Comprometidos con la sustentabilidad
+                    | y con las comunidades donde operamos      
+      section.resp-social
+        .container
+          .row
+            .col-12
+        article.video-resp
+          .frame-azul
+          //- video(src='')
+          img(src="../img/industry/2.jpeg", alt="")
+          .vid-text.d-flex.flex-column.justify-content-around
+            .txt-p
+              h4 Enfocamos
+              span nuestros esfuerzos
+            .container
+              .row
+                p.col-12.col-md-8
+                  | Estamos comprometidos con alcanzar nuestros objetivos de manera responsable y sostenible.
+      section.premios.d-flex.flex-column.justify-content-center
+        .container.mb-5
+          .row
+            .col-12
+        .cont-premios.d-flex.justify-content-center.align-items-center.flex-wrap
+          .call
+            a(href="") Llamanos
+      section.linea
+        .container-fluid
+          .row
+            .col-12.d-flex.flex-column.justify-content-between
+              h5 Informes
+              p Desea reportar:
+              p Número de teléfono (México)
+              p 01-800-1233312
+              p
+                a(href='www.avini.com') www.avini.com
+              p
+                a(href='mailto:avini.contacto@avinicon.com') avini.contacto@avinicon.com
+              p Consulta aquí nuestro
+              p
+                | Programa de Cumplimiento, Política de Integridad
+                | y Procedimientos para el cumplimiento con leyes anticorrupción.
+    include ./components/footer.pug

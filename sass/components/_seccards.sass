@@ -1,0 +1,40 @@
+.sec-cards
+    background: $gris-claro
+    .row
+        .c-txt
+            padding: 89px 0px                    
+            font-size: 25px
+            color: $negro
+            p
+                span
+                    text-decoration: underline
+                    text-decoration-color: $naranja
+        .cont-cards
+            padding: 50px 0px
+            .cdr
+                // width: 20%
+                height: 200px
+                transition: 0.2s all ease
+                position: relative
+                cursor: pointer
+                &:hover
+                    .cont-hover-cards
+                        background-color: $gris-regular                    
+                        width: 300px
+                        height: 250px      
+                        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.23)                         
+                .cont-hover-cards
+                    position: absolute
+                    width: 350px
+                    height: 200px
+                    transition: 0.3s ease all
+                    transform: scale(1.1)
+                    .con-cdr
+                        z-index: 1
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                        h2
+                            font-family: 'work-bold'
+                            font-size: 30px

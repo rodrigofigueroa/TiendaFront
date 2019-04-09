@@ -1,0 +1,158 @@
+@import 'normalize'
+@import 'variables'
+@font-face
+    font-family: 'work-black'
+    src: url('../fonts/WorkSans-Black.ttf')
+@font-face
+    font-family: 'work-bold'
+    src: url('../fonts/WorkSans-Bold.ttf')
+@font-face
+    font-family: 'work-light'
+    src: url('../fonts/WorkSans-Light.ttf')
+@font-face
+    font-family: 'work-extra-light'
+    src: url('../fonts/WorkSans-ExtraLight.ttf')
+@font-face
+    font-family: 'work-medium'
+    src: url('../fonts/WorkSans-Medium.ttf')
+@font-face
+    font-family: 'work-regular'
+    src: url('../fonts/WorkSans-Regular.ttf')
+@font-face
+    font-family: 'work-semibold'
+    src: url('../fonts/WorkSans-SemiBold.ttf')
+body
+    font-family: 'work-regular'
+    font-size: 16px
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    h2
+        font-size: 3.125rem
+    h3
+        font-size: 3.125rem
+    .contenedor-aplicacion
+        position: relative
+    .container-checkbox
+        display: block
+        position: relative
+        padding-left: 35px
+        margin-bottom: 12px
+        cursor: pointer
+        font-size: 0.875rem        
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        transition: 1s all ease
+        &:hover input ~ .checkmark
+            background-color: $azul
+            border: 2px solid $azul            
+        input:checked ~ .checkmark:after
+            display: block
+        &:hover
+            opacity: 1
+    input[type="checkbox"]
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        height: 0
+        width: 0
+    .checkmark
+        position: absolute
+        top: 0
+        left: 0
+        height: 18px
+        width: 18px
+        background-color: $blanco
+        border: 2px solid $gris-fuerte
+    input:checked ~ .checkmark
+        background-color: $azul
+        border: 2px solid transparent
+    .checkmark:after
+        content: ""
+        position: absolute
+        display: none
+    .checkmark:after
+        left: 5px
+        top: 2px
+        width: 5px
+        height: 10px
+        border: solid white
+        border-width: 0 3px 3px 0
+        -webkit-transform: rotate(45deg)
+        -ms-transform: rotate(45deg)
+        transform: rotate(45deg)
+    .cont-inpu
+        position: relative
+        width: 248px
+        height: 46px
+        background: $gradiente-hh-uno
+        background: $gradiente-hh-dos
+        background: $gradiente-hh-tres
+        transition: 1s all ease
+        &:hover
+            background: $azul-claro
+            text-align: center
+            svg
+                display: none
+        input[type="submit"]        
+            background: transparent
+            position: absolute
+            width: 100%
+            height: 100%
+            color: $blanco
+            font-size: 0.9375rem
+            font-family: 'work-medium'
+            outline: none
+            text-align: left
+            border: none
+            left: 0
+            padding: 0 50px
+            &:hover            
+                text-align: center
+            &:focus
+                background: $azul
+        svg
+            position: absolute
+            top: 50%
+            right: 5%
+            transform: translate(-50%,-50%)
+    .logo-m
+        position: absolute
+        left: 50%
+        top: 6%
+        z-index: 1
+        transform: translate(-50%,-50%)
+        z-index: 2
+        a
+            img
+                //width: 159px //logo izquierda
+                width: 100%
+@media screen and (max-width: 1400px)
+    .logo-m
+        top: 3%
+        transform: translate(-50%,-20%)
+@import './components/menu'
+@import './components/footer'
+@import './components/section-slider'
+@import './components/seccards'
+@import './components/responsabilidades'
+@import './components/premios'
+@import './components/premios'
+@import './components/noticias'
+@import './components/quienes'
+@import './components/valores'
+@import './components/nuestra'
+@import './components/mouseimagenes'
+@import './components/historia'
+@import './components/equipo'
+@import './components/accionistas'
+@import './components/pagina-equipo'
+@import './components/responsabilidad'
+@import './components/becas'
+@import './components/reconocimiento'
+@import './components/noticias-pagina'
+@import './components/contacto'
+@import './components/inversionistas'
+@import './components/se-parte'
+@import './components/error-404'

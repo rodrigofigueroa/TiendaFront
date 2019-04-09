@@ -1,0 +1,79 @@
+.cont-contact
+    .container-fluid
+        .row
+            .mas-ofert
+                .cont-contactanos
+                    h4
+                        font-size: 1.875rem
+                        font-family: 'work-bold'
+                        margin-left: 10px
+            .cont-fr
+                .formulario-cont
+                    form
+                        .form-row
+                            .form-group
+                                .lb-txt
+                                    .input-file-convert
+                                        width: 100%
+                                        height: 87px
+                                        position: relative 
+                                        background: #f2f2f2
+                                        text-align: right
+                                        padding: 0px 30px                                        
+                                        i
+                                            position: absolute
+                                            top: 0
+                                            left: 0
+                                            width: 25%
+                                            height: 100%
+                                            background: $gris-regular
+                                            text-align: center
+                                            line-height: 87px
+                                            color: $blanco
+                                            font-size: 25px
+                                        i.fas.fa-check
+                                            visibility: hidden
+                                        i.fas.fa-plus
+                                            visibility: visible
+                                        span
+                                            font-size: 0.875rem
+                                            font-family: 'work-medium'
+                                            line-height: 87px   
+                                        &:hover
+                                            .input-file-convert-seleciona
+                                                opacity: 1
+                                                height: 169px
+                                        .input-file-convert-seleciona
+                                            opacity: 0
+                                            overflow: hidden
+                                            width: 100%
+                                            height: 87px
+                                            background: $blanco       
+                                            position: absolute
+                                            top: 0
+                                            left: 0
+                                            z-index: 1
+                                            transition: 0.6s all ease
+                                            box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15)
+                                            border: solid 1px #36b3d6
+                                            text-align: center
+                                            p
+                                                font-size: 0.875rem
+                                                line-height: 19px
+                                                font-family: 'work-regular'
+                                            span
+                                                color: $azul  
+                                                font-family: 'work-medium'
+                                                font-size: 0.9375rem
+                                            input[type="file"]  
+                                                position: absolute                                          
+                                                top: 0
+                                                left: 0
+                                                width: 100%
+                                                height: 100%
+                                                opacity: 0 
+                                                z-index: 1
+                                                cursor: pointer
+                                        .input-file-convert-seleciona-dos
+                                            opacity: 1
+                                            height: 169px

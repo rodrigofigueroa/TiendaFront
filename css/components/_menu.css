@@ -1,0 +1,18 @@
+nav {
+  position: fixed;
+  background: transparent;
+  padding-top: 76px; }
+  nav .cont-txt-nav {
+    width: 100%; }
+    nav .cont-txt-nav .logo-m {
+      margin-top: -10px; }
+    nav .cont-txt-nav .con-palabras a {
+      color: #000;
+      text-decoration: none; }
+    nav .cont-txt-nav .con-contacto a:nth-child(1) {
+      font-weight: 600; }
+    nav .cont-txt-nav .con-contacto a:nth-child(3) {
+      font-size: 0.75rem; }
+    nav .cont-txt-nav .con-contacto a {
+      color: #fe6e4f;
+      text-decoration: none; }

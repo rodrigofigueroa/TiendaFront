@@ -1,0 +1,58 @@
+doctype html
+html(lang='en')
+  include ./components/head.pug
+  body
+    .contenedor-aplicacion
+      include ./components/header.pug
+      //- include ./components/noticias-bloque.pug
+      section.noticias-pagina.noticia-important
+        .container-fluid
+          .row.d-flex.flex-wrap.justify-content-center
+            .col-12.txt-news-prin
+            .col-12.col-lg-4.d-flex.justify-content-center.align-items-center
+              .articulos
+                a(href="") Todos los artículos (10)
+                a(href="") Categoría 1 (6)
+                a(href="" class="cate-activo-naranja") Categoría 2 (2)
+                a(href="") Categoría 3 (2)
+            .col-12.col-lg-7.news-c
+              .detalle-nota
+                a(href="")
+                  svg.ml-3.f-recta(xmlns='http://www.w3.org/2000/svg', width='50', height='11', viewBox='0 0 60 11')
+                      g(fill='none', fill-rule='evenodd', stroke='#fe6e4f', stroke-linecap='round', stroke-linejoin='round', stroke-width='2')
+                        path(d='M1 5h10M17 4.95h27M53.5 9.5l5-3.795-5-4.205')
+                .principal.mt-4
+                  h2 Lorem ipsum dolor sit amet, 
+                    span consectetur adipiscing elit
+                    |, sed do eiusmod 
+                  p Sol de Tampico, 
+                    span Noviembre 27, 2018
+                    svg(xmlns='http://www.w3.org/2000/svg', width='475', height='8', viewBox='0 0 475 8')
+                      defs
+                        lineargradient#a(x1='50%', x2='50%', y1='0%', y2='100%')
+                          stop(offset='0%', stop-color='#006DC4')
+                          stop(offset='100%', stop-color='#00B9EE')
+                      path(fill='url(#a)', fill-rule='evenodd', d='M465.43 387.84l4.537 8.997L917.069 533.53l-3.933-8.845z', transform='rotate(-17 -1064.68 1751.078)')
+                .info-nota
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id dui a lacus tempus aliquam sed eu urna. Donec vel turpis a magna viverra commodo ac vitae nunc. 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ligula quam. Nunc metus leo, consequat sit amet laoreet et, malesuada id eros. Etiam suscipit eget risus eget iaculis. Aenean vitae tellus tincidunt lorem tempor scelerisque vel in odio. Cras varius sollicitudin massa ut hendrerit. 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id dui a lacus tempus aliquam sed eu urna. Donec vel turpis a magna viverra commodo ac vitae nunc. 
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae ligula quam. Nunc metus leo, consequat sit amet laoreet et, malesuada id eros. Etiam suscipit eget risus eget iaculis. Aenean vitae tellus tincidunt lorem tempor scelerisque vel in odio. Cras varius sollicitudin massa ut hendrerit. 
+                .redes.d-flex
+                  p Share
+                  .linea-azul-equipo
+                  a(href="") 
+                    i.fab.fa-linkedin-in
+                  a(href="") 
+                    i.fab.fa-facebook-f
+                .botones-nota.container-fluid
+                  .row
+                    .col-12.col-md-6.d-flex.justify-content-center.align-items-center
+                      a
+                        svg.ml-3.f-recta(xmlns='http://www.w3.org/2000/svg', width='50', height='11', viewBox='0 0 60 11')
+                          g(fill='none', fill-rule='evenodd', stroke='#fe6e4f', stroke-linecap='round', stroke-linejoin='round', stroke-width='2')
+                            path(d='M1 5h10M17 4.95h27M53.5 9.5l5-3.795-5-4.205')
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    .col-12.col-md-6
+                      p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      include ./components/footer.pug

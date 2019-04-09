@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+  include ./components/head.pug
+  body
+    .contenedor-aplicacion
+      include ./components/header
+      //- include ./components/noticias-bloque.pug
+      section.cont-contact
+        .container-fluid
+          .row
+            .col-12.col-md-9.cont-fr
+              .formulario-cont.col-10
+                a.col-12.col-md-10.primer-texto
+                  h3 ¿Lorem ipsum 
+                    span dolor sit amet?
+                  p.mt-4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                form(action="" class="mt-5")
+                  .form-row
+                    .form-group.col-12.col-md-6.d-flex.flex-column.align-items-center
+                      .lb-txt
+                        span Datos obligatorios *
+                        label(for="nombre") Nombre*
+                        input(type="text" class="form-control" placeholder="" id="nombre")
+                      .lb-txt                      
+                        span Datos obligatorios *
+                        label(for="email") E-mail*
+                        input(type="text" class="form-control" placeholder="" id="email")
+                      .lb-txt                      
+                        span Datos obligatorios *
+                        select(class="easy-select" id="asuntos")
+                          option(value="asunto") Asunto
+                          option(value="asunto") hi
+                          option(value="asunto") heheh
+                          option(value="asunto") huhuhuh
+                        i.fas.fa-chevron-down
+                    .form-group.col-12.col-md-6.d-flex.flex-column.align-items-start
+                      .lb-txt-dos                  
+                        span Datos obligatorios *
+                        label(for="informacion" class="") Mensaje *
+                        textarea(class="form-control" id="informacion")
+                      .form-group.col-12
+                        label.container-checkbox.mt-5
+                          | I accept the processing of my  personal data
+                          input(type='checkbox', checked='checked')
+                          span.checkmark
+                    .form-group.col-12.d-flex.justify-content-end
+                      .cont-inpu       
+                        input(type="submit", value="Enviar")
+                        svg(xmlns='http://www.w3.org/2000/svg', width='44', height='11', viewBox='0 0 44 11')
+                          g(fill='none', fill-rule='evenodd', stroke='#FFF', stroke-linecap='round', stroke-linejoin='round', stroke-width='2')
+                            path(d='M1 5.58h27M37 9.662l5.243-3.833L37 1.58')
+            .mas-ofert.col-12.col-md-3
+              h4.col-12.col-md-10 Únete a nuestro equipo
+                svg(xmlns='http://www.w3.org/2000/svg', width='44', height='11', viewBox='0 0 44 11')
+                  g(fill='none', fill-rule='evenodd', stroke='#fe6e4f', stroke-linecap='round', stroke-linejoin='round', stroke-width='2')
+                    path(d='M1 5.58h27M37 9.662l5.243-3.833L37 1.58')
+              .ofertas.mt-5
+                h3 Más ofertas (1)
+                .oferta.mt-3
+                  span Mes 00, 2018
+                  span It Consultant
+                  p Outsystems Developers
+        .mapa-cont
+          .contactanos-box
+            h3.mt-3 Contáctanos
+            p.mt-3 Torre Virreyes, Pedregal 24 piso 3, Col. Molino del Rey, CDMX
+            span.mt-3 Tel: 
+              span 52 55 52806207
+    include ./components/footer.pug
