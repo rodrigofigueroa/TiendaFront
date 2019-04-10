@@ -234,7 +234,10 @@ function logoScrollNav(){
                              'display': 'none'
                          });          
                          $('nav').show(600);
-                        $('.slider-molino').removeClass('capa-blanca');                
+                        $('.slider-molino').css({
+                            'opacity': '0.9'
+                        });    
+
                          flag =  true;
                      }
                  }else {  
@@ -250,7 +253,10 @@ function logoScrollNav(){
                             'width': '200px'
                         });
                         $('nav').hide(600);
-                        $('.slider-molino').addClass('capa-blanca');
+                        
+                        $('.slider-molino').css({
+                            'opacity': '0.5'
+                        });    
                            flag = false;              
                         }  
                  }
