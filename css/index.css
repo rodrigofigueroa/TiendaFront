@@ -290,6 +290,33 @@ body {
     font-size: 3.125rem; }
   body .contenedor-aplicacion {
     position: relative; }
+    body .contenedor-aplicacion .hamburguer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0px 10px;
+      z-index: 1;
+      cursor: pointer; }
+    body .contenedor-aplicacion .shadow-black {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.6; }
   body .container-checkbox {
     display: block;
     position: relative;
@@ -456,13 +483,13 @@ nav {
 @media screen and (max-width: 629px) {
   nav {
     position: fixed;
-    width: 90%;
+    width: 80%;
     background: #fff;
     top: 0;
     left: 0;
     height: 100%;
     z-index: 4;
-    left: -100%; }
+    left: 100%; }
     nav .cont-txt-nav {
       margin-top: 100px; }
       nav .cont-txt-nav .con-palabras a:nth-child(1) {
@@ -495,12 +522,9 @@ footer {
       footer .f-menu a:hover {
         color: #093B66;
         font-weight: 900; }
-      footer .f-menu a:hover:after {
-        background: #36b3d6;
-        width: 10%; }
       footer .f-menu a:hover:before {
-        background: #36b3d6;
-        width: 30%; }
+        background: #093B66;
+        width: 100%; }
       footer .f-menu a:before {
         content: '';
         width: 0%;
@@ -509,17 +533,6 @@ footer {
         position: absolute;
         bottom: 1%;
         right: 0;
-        -webkit-transition: 0.6s all ease;
-        -o-transition: 0.6s all ease;
-        transition: 0.6s all ease; }
-      footer .f-menu a:after {
-        content: '';
-        width: 0%;
-        height: 2px;
-        background: transparent;
-        position: absolute;
-        bottom: 1%;
-        right: 35%;
         -webkit-transition: 0.6s all ease;
         -o-transition: 0.6s all ease;
         transition: 0.6s all ease; }
@@ -993,21 +1006,6 @@ footer {
   padding: 20px;
   z-index: 3;
   cursor: pointer; }
-  .botones-slider-quienes-somos:before {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 15%;
-    width: 190.2px;
-    height: 15px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#006dc4), to(#00b9ee));
-    background-image: -webkit-linear-gradient(top, #006dc4, #00b9ee);
-    background-image: -o-linear-gradient(top, #006dc4, #00b9ee);
-    background-image: linear-gradient(to bottom, #006dc4, #00b9ee);
-    -webkit-transform: skew(40deg);
-    -ms-transform: skew(40deg);
-    transform: skew(40deg);
-    z-index: 2; }
   .botones-slider-quienes-somos a {
     text-decoration: none;
     position: relative;

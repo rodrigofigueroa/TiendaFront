@@ -70,10 +70,12 @@ $(document).ready(function(){
     //Butons Quienes
     if(document.getElementsByClassName('botones-slider-quienes-somos').length){
         botonesQuienesSomos();
-        mouseFollowme();
-        lineTiempo();
+        mouseFollowme();        
     }
     //Butones Quienes    
+    if(window.innerWidth <= 676){
+        menuResponsvie();
+    }
    /*end Jquery*/     
 });
 
@@ -232,8 +234,10 @@ function logoScrollNav(){
                          }, 500);
                          $('.contenedor-logo-texto').css({
                              'display': 'none'
-                         });          
+                         });    
+                         if(window.innerWidth > 768){                            
                          $('nav').show(600);
+                         }      
                         $('.slider-molino').css({
                             'opacity': '0.9'
                         });    
@@ -252,7 +256,10 @@ function logoScrollNav(){
                         $('#logo-svg-ezquierda a img').animate({
                             'width': '200px'
                         });
+                        if(window.innerWidth > 768){
+
                         $('nav').hide(600);
+                        }
                         
                         $('.slider-molino').css({
                             'opacity': '0.5'
@@ -265,14 +272,16 @@ function logoScrollNav(){
                  }
             });
         }else{
-            $('nav').show(600);
-            $('#logo-svg-ezquierda').css({
-                'top':'120px',
-                'left': '10%'
-            });
-            $('#logo-svg-ezquierda a img').css({
-                'width': '100px'
-             } );
+            if(window.innerWidth > 768){
+                $('nav').show(600);
+                $('#logo-svg-ezquierda').css({
+                    'top':'120px',
+                    'left': '10%'
+                });
+                $('#logo-svg-ezquierda a img').css({
+                    'width': '100px'
+                 } );
+            }
         }    
 }
 
@@ -423,7 +432,31 @@ function mouseFollowme(){
         
 }
 
-function lineTiempo(){
-    
-    
+function menuResponsvie(){
+    var hamburguer = document.createElement('div'),
+        shadowBlack = document.createElement('div'),
+        insertH = document.getElementsByClassName('contenedor-aplicacion')[0];
+        insertH.appendChild(hamburguer);
+        insertH.appendChild(shadowBlack);
+        hamburguer.className = "hamburguer";
+        shadowBlack.className = 'shadow-black'
+        hamburguer.innerHTML = '<i class="fas fa-bars"></i>';
+
+        var haction =  document.getElementsByClassName('hamburguer')[0].children;
+        haction[0].addEventListener('click', () =>{
+            $('nav').show(1000);
+            $('nav').css({
+                'left': '0'
+            });
+            $('.shadow-black').show(1000);
+        });
+        var shadowSB = document.getElementsByClassName('shadow-black')[0];
+            shadowSB.addEventListener('click', () =>{
+                $('nav').hide(1000);
+                    $('nav').css({
+                        'left': '-100%',
+                        'transition': '1s all ease'
+                    });     
+                    $('.shadow-black').hide(800);
+            });
 }
