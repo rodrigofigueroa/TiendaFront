@@ -68,8 +68,7 @@ $(document).ready(function(){
     }
     //end Inputs
     //Butons Quienes
-    if(document.getElementsByClassName('botones-slider-quienes-somos').length){
-        botonesQuienesSomos();
+    if(document.getElementsByClassName('botones-slider-quienes-somos').length){        
         mouseFollowme();        
     }
     //Butones Quienes    
@@ -225,22 +224,27 @@ function logoScrollNav(){
                  scroll = $(window).scrollTop();
                  if(parseInt(scroll) > parseInt(logoTope)){
                      if(!flag){
-                         $('#logo-svg-ezquierda').animate({
-                             'top':'3.5%',
-                             'left': '10%'
-                         }, 500);
-                         $('#logo-svg-ezquierda a img').animate({
-                            'width': '100px'
-                         }, 500);
-                         $('.contenedor-logo-texto').css({
-                             'display': 'none'
-                         });    
-                         if(window.innerWidth > 768){                            
-                         $('nav').show(600);
-                         }      
-                        $('.slider-molino').css({
-                            'opacity': '0.9'
-                        });    
+                         if(window.innerWidth < 767){
+   
+                         }else{
+                             
+                            $('#logo-svg-ezquierda').animate({
+                                'top':'3.5%',
+                                'left': '10%'
+                            }, 500);
+                            $('#logo-svg-ezquierda a img').animate({
+                               'width': '100px'
+                            }, 500);
+                            $('.contenedor-logo-texto').css({
+                                'display': 'none'
+                            });    
+                            if(window.innerWidth > 768){                            
+                            $('nav').show(600);
+                            }      
+                           $('.slider-molino').css({
+                               'opacity': '0.9'
+                           }); 
+                         }
 
                          flag =  true;
                      }

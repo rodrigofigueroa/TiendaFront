@@ -1079,14 +1079,17 @@ footer {
 
 .slider-quienes-somos {
   width: 100%;
-  position: relative; }
+  position: relative;
+  height: 100vh;
+  background: url("../img/quienes/slider/1.png"); }
   .slider-quienes-somos .cont-slider-quienes {
     width: 100%; }
     .slider-quienes-somos .cont-slider-quienes figure {
       width: 100%;
       margin: 0px; }
       .slider-quienes-somos .cont-slider-quienes figure img {
-        width: 100%; }
+        width: 100%;
+        display: none; }
 
 .vision-mision-valores {
   background: #f0f2f4; }
@@ -1523,36 +1526,6 @@ footer {
         margin-right: 20px; }
       .equipo .cont-equipo .c-derecha .primer-equipo .cd-txt .cd-leer-mas span {
         font-size: 10px;
-        font-family: 'work-semibold'; }
-  .equipo .cont-equipo .c-izquierda a {
-    text-decoration: none;
-    color: #000; }
-  .equipo .cont-equipo .c-izquierda .primer-equipo {
-    margin-bottom: 30px;
-    width: 540px;
-    position: relative;
-    -webkit-box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.17);
-    box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.17); }
-    .equipo .cont-equipo .c-izquierda .primer-equipo img {
-      width: 100%; }
-    .equipo .cont-equipo .c-izquierda .primer-equipo .cd-txt {
-      width: 60%;
-      background: #fff;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      padding: 30px 20px; }
-      .equipo .cont-equipo .c-izquierda .primer-equipo .cd-txt h4 {
-        font-size: 12px;
-        font-family: 'work-bold';
-        letter-spacing: 2px;
-        text-transform: uppercase; }
-      .equipo .cont-equipo .c-izquierda .primer-equipo .cd-txt p {
-        font-size: 0.875rem; }
-      .equipo .cont-equipo .c-izquierda .primer-equipo .cd-txt .cd-leer-mas a {
-        margin-right: 20px; }
-      .equipo .cont-equipo .c-izquierda .primer-equipo .cd-txt .cd-leer-mas span {
-        font-size: 0.625rem;
         font-family: 'work-semibold'; }
 
 .accionistas {
@@ -2641,4 +2614,32 @@ footer {
   .equipo .cont-equipo .c-derecha .primer-equipo {
     width: 100%; }
   .equipo {
-    padding: 0; } }
+    padding: 0; }
+  .sec-cards .row .cont-cards .cdr:hover .cont-hover-cards {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0); }
+  .sec-cards .row .cont-cards .cdr .cont-hover-cards {
+    position: static; }
+  .col-12 p {
+    font-size: 12px; }
+  .resp-social .video-resp .vid-text .txt-p {
+    display: none; }
+  .resp-social .video-resp .vid-text .container .row p {
+    font-size: 1em; }
+  .cont-contact .mapa-cont .contactanos-box {
+    display: none; }
+  .deseas .container-fluid .row .col-12:nth-child(1) .des-txt h5 {
+    font-size: 1.5em; }
+  .linea .container-fluid .row div:nth-child(1) {
+    padding: 0px 10px; }
+  .linea .container-fluid .row div:nth-child(1) {
+    padding: 0px 10px; }
+  .deseas .container-fluid .row .col-12:nth-child(2) h5 {
+    font-size: 1.5em; }
+  .reconocimientos .container .row div:nth-child(1) h3 {
+    font-size: 1.5em; }
+  .reconocimientos .container .row div:nth-child(1) p {
+    font-size: 1.2em; } }
