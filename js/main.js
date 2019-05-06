@@ -246,25 +246,25 @@ function logoScrollNav(){
                      }
                  }else {  
                         if(flag){
-                        $('.contenedor-logo-texto').css({
-                            'display': 'block'
-                        }, 500);    
-                        $('#logo-svg-ezquierda').animate({
-                            'top':'6%',
-                            'left': '50%'
-                        }, 500);
-                        $('#logo-svg-ezquierda a img').animate({
-                            'width': '200px'
-                        });
-                        if(window.innerWidth > 768){
+                        // $('.contenedor-logo-texto').css({
+                        //     'display': 'block'
+                        // }, 500);    
+                        // $('#logo-svg-ezquierda').animate({
+                        //     'top':'6%',
+                        //     'left': '50%'
+                        // }, 500);
+                        // $('#logo-svg-ezquierda a img').animate({
+                        //     'width': '200px'
+                        // });
+                        // if(window.innerWidth > 768){
 
-                        $('nav').hide(600);
-                        }
+                        // $('nav').hide(600);
+                        // }
                         
-                        $('.slider-molino').css({
-                            'opacity': '0.5'
-                        });    
-                           flag = false;              
+                        // $('.slider-molino').css({
+                        //     'opacity': '0.5'
+                        // });    
+                        //    flag = false;              
                         }  
                  }
                  if(parseInt(scroll) > (parseInt(logoTope) + 200)){
