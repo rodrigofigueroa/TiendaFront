@@ -1081,7 +1081,7 @@ footer {
   width: 100%;
   position: relative;
   height: 100vh;
-  background: url("../img/quienes/slider/1.png"); }
+  background: url("../img/industry/3.jpg"); }
   .slider-quienes-somos .cont-slider-quienes {
     width: 100%; }
     .slider-quienes-somos .cont-slider-quienes figure {
@@ -1093,93 +1093,10 @@ footer {
 
 .vision-mision-valores {
   background: #f0f2f4; }
-  .vision-mision-valores .row .c-txt {
-    padding: 89px 0px;
-    font-size: 25px;
-    color: #000; }
-    .vision-mision-valores .row .c-txt p {
-      font-size: 1.5625rem; }
-  .vision-mision-valores .row .cont-cards {
-    padding: 50px 0px; }
-    .vision-mision-valores .row .cont-cards .cdr {
-      height: 200px;
-      -webkit-transition: 0.2s all ease;
-      -o-transition: 0.2s all ease;
-      transition: 0.2s all ease;
-      position: relative;
-      cursor: pointer; }
-      .vision-mision-valores .row .cont-cards .cdr:hover {
-        z-index: 2; }
-        .vision-mision-valores .row .cont-cards .cdr:hover .cont-hover-cards {
-          background-color: #dee7e9;
-          width: 583px;
-          height: 415px;
-          -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.23);
-          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.23); }
-          .vision-mision-valores .row .cont-cards .cdr:hover .cont-hover-cards .con-cdr p span {
-            visibility: visible;
-            opacity: 1;
-            display: block; }
-          .vision-mision-valores .row .cont-cards .cdr:hover .cont-hover-cards .con-cdr p .puntitos {
-            display: none;
-            visibility: hidden;
-            opacity: 0; }
-      .vision-mision-valores .row .cont-cards .cdr .cont-hover-cards {
-        position: absolute;
-        width: 350px;
-        height: 200px;
-        -webkit-transition: 0.3s ease all;
-        -o-transition: 0.3s ease all;
-        transition: 0.3s ease all;
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1); }
-        .vision-mision-valores .row .cont-cards .cdr .cont-hover-cards .con-cdr {
-          width: 80%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-          .vision-mision-valores .row .cont-cards .cdr .cont-hover-cards .con-cdr h2 {
-            font-family: 'work-bold';
-            font-size: 30px; }
-          .vision-mision-valores .row .cont-cards .cdr .cont-hover-cards .con-cdr p .puntitos {
-            display: inline;
-            visibility: visible;
-            opacity: 1; }
-          .vision-mision-valores .row .cont-cards .cdr .cont-hover-cards .con-cdr p span {
-            -webkit-transition: 2s all ease;
-            -o-transition: 2s all ease;
-            transition: 2s all ease;
-            opacity: 0;
-            display: none;
-            visibility: hidden; }
-        .vision-mision-valores .row .cont-cards .cdr .cont-hover-cards:after {
-          content: '';
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          -webkit-transition: 1s ease all;
-          -o-transition: 1s ease all;
-          transition: 1s ease all;
-          width: 186px;
-          height: 10px;
-          -webkit-transform: skew(25deg);
-          -ms-transform: skew(25deg);
-          transform: skew(25deg);
-          right: 5px;
-          bottom: -5px; }
-        .vision-mision-valores .row .cont-cards .cdr .cont-hover-cards:hover:after {
-          right: 5px;
-          bottom: -5px;
-          background: #0874a6;
-          background: -webkit-linear-gradient(to right, #36b3d6, #0874a6);
-          background: -webkit-gradient(linear, left top, right top, from(#36b3d6), to(#0874a6));
-          background: -webkit-linear-gradient(left, #36b3d6, #0874a6);
-          background: -o-linear-gradient(left, #36b3d6, #0874a6);
-          background: linear-gradient(to right, #36b3d6, #0874a6); }
+  .vision-mision-valores .row article {
+    padding: 30px; }
+    .vision-mision-valores .row article h2 {
+      color: #093B66; }
 
 .nuestra-empresa {
   height: 1800px;
@@ -1489,14 +1406,12 @@ footer {
         background: #093B66; }
 
 .equipo {
-  padding: 100px; }
-  .equipo .container .row div {
-    margin-top: 150px; }
-    .equipo .container .row div h3 {
-      color: #093B66;
-      font-size: 3.75rem; }
-    .equipo .container .row div p {
-      font-size: 1.5625rem; }
+  padding: 50px; }
+  .equipo .container .row div h3 {
+    color: #093B66;
+    font-size: 3.75rem; }
+  .equipo .container .row div p {
+    font-size: 1.5625rem; }
   .equipo .cont-equipo .c-derecha a {
     text-decoration: none;
     color: #000; }
@@ -1527,6 +1442,26 @@ footer {
       .equipo .cont-equipo .c-derecha .primer-equipo .cd-txt .cd-leer-mas span {
         font-size: 10px;
         font-family: 'work-semibold'; }
+  .equipo .cont-equipo .card-equip figure {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #093B66; }
+    .equipo .cont-equipo .card-equip figure a {
+      position: absolute;
+      top: 0;
+      left: -40%; }
+  .equipo .cont-equipo .card-equip .cd-txt {
+    text-align: center; }
+    .equipo .cont-equipo .card-equip .cd-txt a {
+      text-decoration: none;
+      color: #000; }
+      .equipo .cont-equipo .card-equip .cd-txt a h4 {
+        font-size: 1.125rem; }
+      .equipo .cont-equipo .card-equip .cd-txt a p {
+        font-size: 0.875rem; }
 
 .accionistas {
   background: #f0f2f4;

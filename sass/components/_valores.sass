@@ -1,76 +1,8 @@
 .vision-mision-valores
     background: $gris-claro
     .row
-        .c-txt
-            padding: 89px 0px                    
-            font-size: 25px
-            color: $negro
-            p
-                font-size: 1.5625rem
-        .cont-cards
-            padding: 50px 0px
-            .cdr
-                // width: 20%
-                height: 200px
-                transition: 0.2s all ease
-                position: relative
-                cursor: pointer        
-                &:hover
-                    z-index: 2
-                    .cont-hover-cards
-                        background-color: $gris-regular                    
-                        width: 583px
-                        height: 415px
-                        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.23)  
-                        .con-cdr
-                            p
-                                span
-                                    visibility: visible
-                                    opacity: 1       
-                                    display: block
-                                .puntitos
-                                    display: none
-                                    visibility: hidden
-                                    opacity: 0 
-                .cont-hover-cards
-                    position: absolute
-                    width: 350px
-                    height: 200px
-                    transition: 0.3s ease all
-                    transform: scale(1.1)
-                    .con-cdr
-                        width: 80%                        
-                        position: absolute
-                        top: 50%
-                        left: 50%
-                        transform: translate(-50%,-50%)
-                        h2
-                            font-family: 'work-bold'
-                            font-size: 30px
-                        p
-                            .puntitos
-                                display: inline
-                                visibility: visible
-                                opacity: 1
-                            span
-                                transition: 2s all ease
-                                opacity: 0
-                                display: none
-                                visibility: hidden
-                    &:after
-                        content: ''
-                        position: absolute
-                        right: 0
-                        bottom: 0
-                        transition: 1s ease all
-                        width: 186px
-                        height: 10px
-                        transform: skew(25deg)
-                        right: 5px
-                        bottom: -5px
-                    &:hover:after         
-                        right: 5px
-                        bottom: -5px
-                        background: $gradiente-h-uno
-                        background: $gradiente-h-dos
-                        background: $gradiente-h-tres
+        article
+            padding: 30px
+            h2
+                color: $azul
+                
